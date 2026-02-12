@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renewable Energy Consulting - RWDI & CNP Building Performance Engineering">
+    <title>Renewable Energy | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .single-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Sustainability Engineering" data-ko="지속가능성 엔지니어링">지속가능성 엔지니어링</span>
+                <h1 data-en="Renewable Energy" data-ko="재생 에너지 (Renewable Energy)">재생 에너지 (Renewable Energy)</h1>
+                <p class="hero-lead" data-en="We help you navigate complex options to leverage new opportunities in renewable energy generation. Renewable energy systems often require significant investment and can be a source of uncertainty. We cut through decision and research fatigue, so you can make better decisions sooner, with confidence and finality." data-ko="우리는 귀하가 재생 에너지 발전의 새로운 기회를 활용할 수 있도록 복잡한 옵션을 탐색하도록 돕습니다. 재생 에너지 시스템은 종종 상당한 투자가 필요하며 불확실성의 원인이 될 수 있습니다. 우리는 결정 및 연구 피로를 줄여 귀하가 확신을 가지고 더 빨리 더 나은 결정을 내릴 수 있도록 합니다.">
+                    We help you navigate complex options to leverage new opportunities in renewable energy generation. Renewable energy systems often require significant investment and can be a source of uncertainty. We cut through decision and research fatigue, so you can make better decisions sooner, with confidence and finality.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Choose cutting-edge technologies with confidence." data-ko="확신을 가지고 최첨단 기술을 선택합니다.">
+                        Choose cutting-edge technologies with confidence.
+                    </p>
+                    <br>
+                    <p data-en="Combine sustainability strategies efficiently." data-ko="지속 가능성 전략을 효율적으로 결합합니다.">
+                        Combine sustainability strategies efficiently.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Develop masterplans featuring renewable generation." data-ko="재생 에너지 발전이 포함된 마스터플랜을 개발합니다.">
+                        Develop masterplans featuring renewable generation.
+                    </p>
+                    <br>
+                    <p data-en="Leverage renewable energy strategies to achieve sustainability certification." data-ko="지속 가능성 인증을 달성하기 위해 재생 에너지 전략을 활용합니다.">
+                        Leverage renewable energy strategies to achieve sustainability certification.
+                    </p>
+                    <br>
+                    <p data-en="Reduce first costs and operating costs through smart energy choices and incentives." data-ko="스마트한 에너지 선택과 인센티브를 통해 초기 비용과 운영 비용을 절감합니다.">
+                        Reduce first costs and operating costs through smart energy choices and incentives.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Avoid pitfalls in deployment (e.g., location, orientation)." data-ko="배치(예: 위치, 방향) 시의 함정을 피합니다.">
+                        Avoid pitfalls in deployment (e.g., location, orientation).
+                    </p>
+                    <br>
+                    <p data-en="Get an accurate picture of energy costs and savings." data-ko="에너지 비용과 절감액에 대한 정확한 그림을 얻습니다.">
+                        Get an accurate picture of energy costs and savings.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Achieve certification with delivered energy performance." data-ko="제공된 에너지 성능으로 인증을 달성합니다.">
+                        Achieve certification with delivered energy performance.
+                    </p>
+                    <br>
+                    <p data-en="Meet financial performance targets without surprises." data-ko="놀라움 없이 재무 성과 목표를 달성합니다.">
+                        Meet financial performance targets without surprises.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Context-Aware Solutions" data-ko="맥락 인식 솔루션">맥락 인식 솔루션</span>
+                    <h2 data-en="Optimizing Renewable Choices" data-ko="재생 에너지 선택 최적화">재생 에너지 선택 최적화</h2>
+                    <p class="project-desc" data-en="For a solar photovoltaic (PV) installation, for example, RWDI alerts you to pitfalls and opportunities unique to your climate and context. It could be that a solar PV system isn't the best choice for your site; another solution could be a better fit for your project." data-ko="예를 들어 태양광(PV) 설치의 경우, RWDI는 귀하의 기후와 상황에 고유한 함정과 기회를 알려드립니다. 태양광 PV 시스템이 귀하의 현장에 최선의 선택이 아닐 수도 있으며, 다른 솔루션이 프로젝트에 더 적합할 수도 있습니다.">
+                        For a solar photovoltaic (PV) installation, for example, RWDI alerts you to pitfalls and opportunities unique to your climate and context. It could be that a solar PV system isn't the best choice for your site; another solution could be a better fit for your project.
+                    </p>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Analysis" data-ko="분석">분석</strong>
+                            <span data-en="In-depth, bias-free analysis" data-ko="심층적이고 편견 없는 분석">심층적이고 편견 없는 분석</span>
+                        </li>
+                        <li>
+                            <strong data-en="Outcome" data-ko="결과">결과</strong>
+                            <span data-en="Clear recommendations & estimates" data-ko="명확한 권장 사항 및 추정치">명확한 권장 사항 및 추정치</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-visual">
+                    <img src="../images/renewable-energy.png" width="800" height="500" class="responsive-png" alt="Renewable Energy Systems Analysis">
+                    <p class="img-caption">Visualized: Analysis of renewable energy potential and optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

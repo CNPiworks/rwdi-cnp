@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exhaust Dispersion & Design - RWDI & CNP Building Performance Engineering">
+    <title>Exhaust Dispersion & Design | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* Sector Expertise 스타일 (스크린샷 반영) */
+        .portfolio-groups {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .portfolio-group {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            width: 100%;
+            max-width: 900px; /* 스크린샷과 유사한 너비 제한 */
+        }
+
+        .portfolio-group h3 {
+            font-size: 1.3rem;
+            color: #003366; /* 짙은 파란색 (RWDI/CNP 톤) */
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            font-weight: 700;
+        }
+
+        .single-list-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2단 그리드 */
+            gap: 15px 40px; /* 행 간격 15px, 열 간격 40px */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .single-list-grid li {
+            position: relative;
+            padding-left: 20px;
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .single-list-grid li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0077cc; /* 밝은 파란색 불릿 포인트 */
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .single-list-grid {
+                grid-template-columns: 1fr; /* 모바일에서는 1단 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Air Quality & Safety" data-ko="공기질 및 안전">공기질 및 안전</span>
+                <h1 data-en="Exhaust Dispersion & Design" data-ko="배기 확산 및 설계 (Exhaust Dispersion & Design)">배기 확산 및 설계 (Exhaust Dispersion & Design)</h1>
+                <p class="hero-lead" data-en="We help you manage building air quality to enhance occupant experience, and improve building and equipment performance. The effect of air quality in and around a building can make or break a project. Exhaust travels with the wind, which means it can end up where least expected. It takes a specialist's eye to bring effective, practical solutions to this often-complicated issue." data-ko="우리는 거주자 경험을 향상시키고 건물 및 장비 성능을 개선하기 위해 건물 공기질 관리를 돕습니다. 건물 내부와 주변의 공기질이 프로젝트의 성패를 좌우할 수 있습니다. 배기는 바람을 타고 이동하므로 전혀 예상치 못한 곳으로 흘러갈 수 있습니다. 이 복잡한 문제에 효과적이고 실용적인 솔루션을 제시하려면 전문가의 안목이 필요합니다.">
+                    [cite_start]We help you manage building air quality to enhance occupant experience, and improve building and equipment performance. The effect of air quality in and around a building can make or break a project. Exhaust travels with the wind, which means it can end up where least expected. It takes a specialist's eye to bring effective, practical solutions to this often-complicated issue. [cite: 267-270]
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Realize ambitious aesthetics, high energy efficiency, and good air quality by astute handling of stacks and intakes." data-ko="배기구와 흡기구의 빈틈없는 처리를 통해 야심 찬 미학, 높은 에너지 효율성 및 양호한 공기질을 실현합니다.">
+                        Realize ambitious aesthetics, high energy efficiency, and good air quality by astute handling of stacks and intakes.
+                    </p>
+                    <br>
+                    <p data-en="Demonstrate that exhaust fans can be operated at lower horsepower—and lower cost—without compromising safety." data-ko="안전을 타협하지 않으면서 배기 팬을 더 낮은 마력과 더 낮은 비용으로 작동할 수 있음을 입증합니다.">
+                        Demonstrate that exhaust fans can be operated at lower horsepower—and lower cost—without compromising safety.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Enhance the user/owner experience—and market value—of a space by delivering better indoor air quality." data-ko="더 나은 실내 공기질을 제공하여 공간의 사용자/소유자 경험과 시장 가치를 향상시킵니다.">
+                        Enhance the user/owner experience—and market value—of a space by delivering better indoor air quality.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Prevent re-entry of unsafe levels of pollutants." data-ko="안전하지 않은 수준의 오염 물질이 재유입되는 것을 방지합니다.">
+                        Prevent re-entry of unsafe levels of pollutants.
+                    </p>
+                    <br>
+                    <p data-en="Avoid odor complaints, visibility issues, and façade damage by mitigating plume movement." data-ko="플룸 이동을 완화하여 냄새 불만, 가시성 문제 및 파사드 손상을 방지합니다.">
+                        Avoid odor complaints, visibility issues, and façade damage by mitigating plume movement.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Demonstrate due diligence to community groups, staff, building occupants, and other stakeholders." data-ko="지역 사회 그룹, 직원, 건물 입주자 및 기타 이해 관계자에게 적절한 주의 의무를 입증합니다.">
+                        Demonstrate due diligence to community groups, staff, building occupants, and other stakeholders.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Air Quality Management" data-ko="공기질 관리">공기질 관리</span>
+                    <h2 data-en="Managing Building Air Quality" data-ko="건물 공기질 관리">건물 공기질 관리</h2>
+                    <p class="project-desc" data-en="By understanding how a building fits within local airflows, we can ensure all stacks and intakes are sited and sized appropriately. Effective design for building air quality lowers both costs and risks." data-ko="건물이 지역 기류 내에서 어떻게 적합한지 이해함으로써 모든 배기구와 흡기구가 적절하게 배치되고 크기가 조정되도록 할 수 있습니다. 건물 공기질을 위한 효과적인 설계는 비용과 위험을 모두 낮춥니다.">
+                        By understanding how a building fits within local airflows, we can ensure all stacks and intakes are sited and sized appropriately. [cite_start]Effective design for building air quality lowers both costs and risks. [cite: 265-266]
+                    </p>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Method" data-ko="방법">방법</strong>
+                            <span data-en="Understanding local airflows" data-ko="지역 기류 이해">지역 기류 이해</span>
+                        </li>
+                        <li>
+                            <strong data-en="Result" data-ko="결과">결과</strong>
+                            <span data-en="Lower costs and risks" data-ko="비용 및 위험 감소">비용 및 위험 감소</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-visual">
+                    <img src="../images/exhaust-dispersion.png" width="800" height="500" class="responsive-png" alt="Exhaust Dispersion Analysis">
+                    <p class="img-caption">Visualized: Analysis of rooftop exhaust dispersion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-list">
+        <div class="container">
+            <h2 class="section-title-sm" data-en="Sector Expertise" data-ko="분야별 전문성">분야별 전문성</h2>
+            <div class="portfolio-groups">
+                <div class="portfolio-group">
+                    <h3 data-en="Key Sectors" data-ko="주요 분야">Key Sectors</h3>
+                    <ul class="single-list-grid">
+                        <li data-en="Commercial, institutional & residential projects" data-ko="상업, 기관 및 주거 프로젝트">Commercial, institutional & residential projects</li>
+                        <li data-en="Data centers" data-ko="데이터 센터">Data centers</li>
+                        <li data-en="Healthcare" data-ko="헬스케어">Healthcare</li>
+                        <li data-en="Laboratory/research facilities" data-ko="실험실/연구 시설">Laboratory/research facilities</li>
+                        <li data-en="Manufacturing" data-ko="제조업">Manufacturing</li>
+                        <li data-en="Transportation facilities" data-ko="운송 시설">Transportation facilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

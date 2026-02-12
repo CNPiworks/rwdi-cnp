@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wind-Driven Rain Simulation & Management - RWDI & CNP Building Performance Engineering">
+    <title>Wind-Driven Rain | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Environmental Performance" data-ko="환경 성능 분석">환경 성능 분석</span>
+                <h1 data-en="Wind-Driven Rain" data-ko="풍동우 (Wind-Driven Rain)">풍동우 (Wind-Driven Rain)</h1>
+                <p class="hero-lead" data-en="When wind-driven rain meets a building's form, the results can be unexpected. Certain conditions can cause rainwater to move and accumulate in undesirable ways. Good design for open spaces and rainwater management takes these patterns into account." data-ko="바람에 실린 비가 건물의 형태와 만나면 예상치 못한 결과가 발생할 수 있습니다. 특정 조건에서는 빗물이 원치 않는 방식으로 이동하거나 축적될 수 있습니다. 개방형 공간과 우수 관리를 위한 좋은 설계는 이러한 패턴을 고려해야 합니다.">
+                    바람에 실린 비가 건물의 형태와 만나면 예상치 못한 결과가 발생할 수 있습니다. 특정 조건에서는 빗물이 원치 않는 방식으로 이동하거나 축적될 수 있습니다. 개방형 공간과 우수 관리를 위한 좋은 설계는 이러한 패턴을 고려해야 합니다.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Use new designs and façade systems without creating new problems." data-ko="새로운 문제 발생 없이 새로운 디자인과 파사드 시스템을 사용합니다.">
+                        새로운 문제 발생 없이 새로운 디자인과 파사드 시스템을 사용합니다.
+                    </p>
+                    <br>
+                    <p data-en="Implement sustainable building strategies." data-ko="지속 가능한 건축 전략을 구현합니다.">
+                        지속 가능한 건축 전략을 구현합니다.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Minimize rain management costs." data-ko="우수 관리 비용을 최소화합니다.">
+                        우수 관리 비용을 최소화합니다.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Find precise and effective fixes for infiltrating rain." data-ko="빗물 침투에 대한 정밀하고 효과적인 해결책을 찾습니다.">
+                        빗물 침투에 대한 정밀하고 효과적인 해결책을 찾습니다.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Keep patrons dry and comfortable." data-ko="이용객이 비에 젖지 않고 쾌적함을 유지하도록 합니다.">
+                        이용객이 비에 젖지 않고 쾌적함을 유지하도록 합니다.
+                    </p>
+                    <br>
+                    <p data-en="Meet code for complex guttering and runoff scenarios." data-ko="복잡한 홈통 및 유출 시나리오에 대한 규정을 준수합니다.">
+                        복잡한 홈통 및 유출 시나리오에 대한 규정을 준수합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Rainwater Management" data-ko="우수 관리">우수 관리</span>
+                    <h2 data-en="Visualizing Rain Patterns" data-ko="빗물 패턴 시각화">빗물 패턴 시각화</h2>
+                    <p class="project-desc" data-en="We show you where rain will go, how often it will go there, and how to make it go somewhere else—without creating new issues. We work with the specifics of your location and design to understand how rain could enter (or 'infiltrate') your project. We also envision how rain will flow on and around it. To do this, we apply our world-leading expertise in meteorology, fluid dynamics and the physics of airborne particles." data-ko="우리는 빗물이 어디로 흐를지, 얼마나 자주 그곳으로 갈지, 그리고 새로운 문제를 일으키지 않으면서 어떻게 다른 곳으로 흐르게 할지 보여줍니다. 우리는 귀하 프로젝트의 위치와 설계 특성을 고려하여 비가 어떻게 침투할 수 있는지 이해하고, 건물 위와 주변에서 비가 어떻게 흐를지 예측합니다. 이를 위해 기상학, 유체 역학 및 공기 중 입자 물리학에 대한 세계적인 전문 지식을 적용합니다.">
+                        우리는 빗물이 어디로 흐를지, 얼마나 자주 그곳으로 갈지, 그리고 새로운 문제를 일으키지 않으면서 어떻게 다른 곳으로 흐르게 할지 보여줍니다. 우리는 귀하 프로젝트의 위치와 설계 특성을 고려하여 비가 어떻게 침투할 수 있는지 이해하고, 건물 위와 주변에서 비가 어떻게 흐를지 예측합니다. 이를 위해 기상학, 유체 역학 및 공기 중 입자 물리학에 대한 세계적인 전문 지식을 적용합니다.
+                    </p>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Expertise" data-ko="전문 지식">전문 지식</strong>
+                            <span data-en="Meteorology & Fluid dynamics" data-ko="기상학 및 유체 역학">기상학 및 유체 역학</span>
+                        </li>
+                        <li>
+                            <strong data-en="Outcome" data-ko="결과">결과</strong>
+                            <span data-en="Informed decisions about solutions" data-ko="솔루션에 대한 정보 기반 의사결정">솔루션에 대한 정보 기반 의사결정</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-visual">
+                    <img src="../images/wind-rain-simulation.png" width="800" height="500" class="responsive-png" alt="Wind-driven Rain Simulation">
+                    <p class="img-caption">Visualized: Rainwater accumulation and flow patterns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

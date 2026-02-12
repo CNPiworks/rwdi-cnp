@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aerodynamic Form Optimization & High Performance Structures - RWDI & CNP Building Performance Engineering">
+    <title>Aerodynamic Form Optimization | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* Optimization Benefits 스타일 (스크린샷 반영) */
+        .portfolio-groups {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .portfolio-group {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .portfolio-group h3 {
+            font-size: 1.3rem;
+            color: #003366;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            font-weight: 700;
+        }
+
+        .single-list-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 40px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .single-list-grid li {
+            position: relative;
+            padding-left: 20px;
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .single-list-grid li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0077cc;
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .single-list-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="High Performance Structures" data-ko="고성능 구조물">고성능 구조물</span>
+                <h1 data-en="Aerodynamic Form Optimization" data-ko="공기역학적 형태 최적화 (Aerodynamic Form Optimization)">공기역학적 형태 최적화 (Aerodynamic Form Optimization)</h1>
+                <p class="hero-lead" data-en="We help you translate design concepts into wind-friendly forms. Our aerodynamics studies yield an external form that is fully realizable in construction, yet still true to your vision. By making ideas buildable, these studies empower ambitious and innovative design." data-ko="우리는 디자인 컨셉을 바람 친화적인 형태로 변환하도록 돕습니다. 우리의 공기역학 연구는 시공 시 완전히 실현 가능하면서도 여전히 귀하의 비전에 충실한 외형을 산출합니다. 아이디어를 시공 가능하게 만듦으로써, 이러한 연구는 야심 차고 혁신적인 디자인을 가능하게 합니다.">
+                    We help you translate design concepts into wind-friendly forms. Our aerodynamics studies yield an external form that is fully realizable in construction, yet still true to your vision. By making ideas buildable, these studies empower ambitious and innovative design. 
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Improve the likelihood of faithfully realizing a challenging original concept." data-ko="도전적인 원본 컨셉을 충실히 실현할 가능성을 높입니다.">
+                        Improve the likelihood of faithfully realizing a challenging original concept.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Identify early the form features that will later drive structural design costs." data-ko="나중에 구조 설계 비용을 주도할 형태적 특징을 조기에 식별합니다.">
+                        Identify early the form features that will later drive structural design costs.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Quickly analyze trade-offs between form and myriad structural concerns." data-ko="형태와 무수한 구조적 우려 사항 간의 상충 관계를 신속하게 분석합니다.">
+                        Quickly analyze trade-offs between form and myriad structural concerns.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Produce quantified design options in a fast-moving context." data-ko="빠르게 변화하는 상황에서 정량화된 설계 옵션을 생성합니다.">
+                        Produce quantified design options in a fast-moving context.
+                    </p>
+                    <br>
+                    <p data-en="Deliver a demonstrably buildable design." data-ko="명백히 시공 가능한 설계를 제공합니다.">
+                        Deliver a demonstrably buildable design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Design Realization" data-ko="디자인 실현">디자인 실현</span>
+                    <h2 data-en="Realizing Visionary Designs" data-ko="비전 있는 디자인 실현">비전 있는 디자인 실현</h2>
+                    <p class="project-desc" data-en="Our wind-tunnel studies have guided the early design of several highly recognizable buildings. For example, the gentle twist of the Shanghai Tower distributes the maximum cladding loads while lowering costs and maintaining the desired aesthetic." data-ko="우리의 풍동 연구는 잘 알려진 여러 건물의 초기 설계를 안내해 왔습니다. 예를 들어, 상하이 타워의 완만한 비틀림은 비용을 낮추고 원하는 미학을 유지하면서 최대 외장재 하중을 분산시킵니다.">
+                        Our wind-tunnel studies have guided the early design of several highly recognizable buildings. For example, the gentle twist of the Shanghai Tower distributes the maximum cladding loads while lowering costs and maintaining the desired aesthetic. 
+                    </p>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Expertise" data-ko="전문 지식">전문 지식</strong>
+                            <span data-en="Wind climate & Aerodynamics" data-ko="바람 기후 및 공기역학">바람 기후 및 공기역학</span>
+                        </li>
+                        <li>
+                            <strong data-en="Outcome" data-ko="결과">결과</strong>
+                            <span data-en="Buildable, innovative forms" data-ko="시공 가능하고 혁신적인 형태">시공 가능하고 혁신적인 형태</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-visual">
+                    <img src="../images/aerodynamic-optimization.png" width="800" height="500" class="responsive-png" alt="Aerodynamic Form Optimization - Shanghai Tower Model">
+                    <p class="img-caption">Visualized: Wind tunnel testing for aerodynamic form optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-list">
+        <div class="container">
+            <h2 class="section-title-sm" data-en="Optimization Benefits" data-ko="최적화 이점">최적화 이점</h2>
+            <div class="portfolio-groups">
+                <div class="portfolio-group">
+                    <h3 data-en="A project refined through wind studies will be..." data-ko="풍동 연구를 통해 정제된 프로젝트는 다음과 같습니다...">A project refined through wind studies will be...</h3>
+                    <ul class="single-list-grid">
+                        <li data-en="More in tune with the elements" data-ko="자연 요소와 더 조화를 이룸">More in tune with the elements</li>
+                        <li data-en="Better suited to its location in the world" data-ko="전 세계 해당 위치에 더 적합함">Better suited to its location in the world</li>
+                        <li data-en="More effective in its use of materials" data-ko="자재 사용에 있어 더 효과적임">More effective in its use of materials</li>
+                        <li data-en="Less expensive to build" data-ko="건설 비용 절감">Less expensive to build</li>
+                        <li data-en="More cost efficient to manage long term" data-ko="장기적 관리에 있어 더 비용 효율적임">More cost efficient to manage long term</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

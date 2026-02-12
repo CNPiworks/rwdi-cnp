@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bridge Aerodynamics & Wind Engineering - RWDI & CNP Building Performance Engineering">
+    <title>Bridge Aerodynamics | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .single-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Structural Aerodynamics" data-ko="구조 공기역학">구조 공기역학</span>
+                <h1 data-en="Bridge Aerodynamics" data-ko="교량 공기역학 (Bridge Aerodynamics)">교량 공기역학 (Bridge Aerodynamics)</h1>
+                <p class="hero-lead" data-en="We help you arrive at an optimized bridge design that is safe, cost-efficient, aerodynamically sound and highly functional. Our aerodynamic simulations and testing protocols yield predicted wind loads that are unmatched in the industry for simplicity and accuracy. We also use custom modeling tools to quickly and efficiently evaluate design adjustments to accommodate these loads." data-ko="우리는 안전하고 비용 효율적이며 공기역학적으로 건전하고 기능이 뛰어난 최적화된 교량 설계에 도달하도록 돕습니다. 우리의 공기역학 시뮬레이션 및 테스트 프로토콜은 단순성과 정확성 면에서 업계 최고 수준의 예측 풍하중을 산출합니다. 또한 맞춤형 모델링 도구를 사용하여 이러한 하중을 수용하기 위한 설계 조정을 빠르고 효율적으로 평가합니다.">
+                    We help you arrive at an optimized bridge design that is safe, cost-efficient, aerodynamically sound and highly functional. Our aerodynamic simulations and testing protocols yield predicted wind loads that are unmatched in the industry for simplicity and accuracy. We also use custom modeling tools to quickly and efficiently evaluate design adjustments to accommodate these loads. 
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Compensate for unanticipated aerodynamic behavior in visionary designs." data-ko="비전 있는 설계에서 예상치 못한 공기역학적 거동을 보완합니다.">
+                        Compensate for unanticipated aerodynamic behavior in visionary designs.
+                    </p>
+                    <br>
+                    <p data-en="Safely undertake lighter, material-efficient and more flexible designs." data-ko="더 가볍고 재료 효율적이며 유연한 설계를 안전하게 수행합니다.">
+                        Safely undertake lighter, material-efficient and more flexible designs.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Get design-ready insights quickly." data-ko="설계에 바로 적용 가능한 통찰력을 신속하게 확보합니다.">
+                        Get design-ready insights quickly.
+                    </p>
+                    <br>
+                    <p data-en="Spend capital where it matters by choosing correct thresholds for tolerable motions." data-ko="허용 가능한 움직임에 대한 올바른 임계값을 선택하여 중요한 곳에 자본을 지출합니다.">
+                        Spend capital where it matters by choosing correct thresholds for tolerable motions.
+                    </p>
+                    <br>
+                    <p data-en="Save money by making optimized, highly specific adjustments to a design." data-ko="설계에 최적화되고 매우 구체적인 조정을 하여 비용을 절감합니다.">
+                        Save money by making optimized, highly specific adjustments to a design.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Understand the unique effects created by adjacent bridges." data-ko="인접 교량에 의해 생성되는 독특한 효과를 이해합니다.">
+                        Understand the unique effects created by adjacent bridges.
+                    </p>
+                    <br>
+                    <p data-en="Adapt a design to challenging prevailing winds." data-ko="까다로운 주풍에 맞춰 설계를 조정합니다.">
+                        Adapt a design to challenging prevailing winds.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Create a positive user experience of safety and comfort." data-ko="안전과 편안함에 대한 긍정적인 사용자 경험을 창출합니다.">
+                        Create a positive user experience of safety and comfort.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Precision Modeling" data-ko="정밀 모델링">정밀 모델링</span>
+                    <h2 data-en="Optimizing Bridge Stability" data-ko="교량 안정성 최적화">교량 안정성 최적화</h2>
+                    <p class="project-desc" data-en="Small geometric details can have critical effects on the aerodynamic stability of bridges. Our testing depends not only on instruments, but on our highly skilled model builders who created this detailed replica of a span of the Angus L. MacDonald Bridge in Nova Scotia, Canada. (The cylinders on wires simulate the aerodynamics of the bridge hangers.)" data-ko="작은 기하학적 세부 사항이 교량의 공기역학적 안정성에 결정적인 영향을 미칠 수 있습니다. 우리의 테스트는 장비뿐만 아니라 캐나다 노바스코샤의 앵거스 L. 맥도날드 교량 경간의 정밀한 복제본을 제작한 숙련된 모델 제작자에게도 의존합니다. (와이어의 실린더는 교량 행거의 공기역학을 시뮬레이션합니다.)">
+                        Small geometric details can have critical effects on the aerodynamic stability of bridges. Our testing depends not only on instruments, but on our highly skilled model builders who created this detailed replica of a span of the Angus L. MacDonald Bridge in Nova Scotia, Canada. (The cylinders on wires simulate the aerodynamics of the bridge hangers.) [cite: 299-301]
+                    </p>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Method" data-ko="방법">방법</strong>
+                            <span data-en="Wind tunnel & numeric models" data-ko="풍동 및 수치 모델">풍동 및 수치 모델</span>
+                        </li>
+                        <li>
+                            <strong data-en="Result" data-ko="결과">결과</strong>
+                            <span data-en="Unmatched simplicity and accuracy" data-ko="타의 추종을 불허하는 단순성 및 정확성">타의 추종을 불허하는 단순성 및 정확성</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-visual">
+                    <img src="../images/bridge-aerodynamics.png" width="800" height="500" class="responsive-png" alt="Bridge Aerodynamics Wind Tunnel Test">
+                    <p class="img-caption">Visualized: Wind tunnel testing of detailed bridge model</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

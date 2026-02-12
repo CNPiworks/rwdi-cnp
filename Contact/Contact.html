@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact RWDI & CNP Partnership">
+    <title>Contact Us | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/Contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="contact-hero">
+        <div class="container">
+            <h1 data-en="Contact Us" data-ko="문의하기">문의하기</h1>
+            <p data-en="Get in touch to discuss your project needs and how we can help." data-ko="프로젝트 요구사항과 저희가 어떻게 도울 수 있는지 논의하기 위해 연락해 주십시오.">
+                프로젝트 요구사항과 저희가 어떻게 도울 수 있는지 논의하기 위해 연락해 주십시오.
+            </p>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-info-box">
+                    <h3 data-en="Get in Touch" data-ko="연락처 정보">연락처 정보</h3>
+                    <p class="contact-desc" data-en="Reach out to our team to learn more about how we can support your project with world-class building performance engineering solutions." data-ko="세계적 수준의 건물 성능 엔지니어링 솔루션으로 귀하의 프로젝트를 어떻게 지원할 수 있는지 자세히 알아보려면 저희 팀에 문의하십시오.">
+                        세계적 수준의 건물 성능 엔지니어링 솔루션으로 귀하의 프로젝트를 어떻게 지원할 수 있는지 자세히 알아보려면 저희 팀에 문의하십시오.
+                    </p>
+
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                        <div class="item-text">
+                            <h4 data-en="Email" data-ko="이메일">이메일</h4>
+                            <p>info@rwdi-cnp.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-phone"></i></div>
+                        <div class="item-text">
+                            <h4 data-en="Phone" data-ko="전화">전화</h4>
+                            <p>+82-02-XXXX-XXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="item-text">
+                            <h4 data-en="Location" data-ko="위치">위치</h4>
+                            <p data-en="C-1101, Hyundai Knowledge Industry Center, 7 Beobwon-ro 11-gil, Songpa-gu, Seoul, South Korea" data-ko="대한민국 서울시 송파구 법원로 11길 7, 현대지식산업센터 C동 1101호">
+                                대한민국 서울시 송파구 법원로 11길 7,<br>현대지식산업센터 C동 1101호
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				<div class="contact-form-box">
+                    <form id="contactForm">
+                        <div class="form-grid-row">
+                            <div class="form-group">
+                                <label data-en="Name" data-ko="이름">이름 *</label>
+                                <input type="text" name="name" required 
+                                       placeholder="홍길동" 
+                                       data-ko-placeholder="홍길동" 
+                                       data-en-placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Company" data-ko="회사">회사</label>
+                                <input type="text" name="company" 
+                                       placeholder="회사명 입력" 
+                                       data-ko-placeholder="회사명 입력" 
+                                       data-en-placeholder="Company Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Email" data-ko="이메일">이메일 *</label>
+                            <input type="email" name="email" required 
+                                   placeholder="example@email.com" 
+                                   data-ko-placeholder="example@email.com" 
+                                   data-en-placeholder="example@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Service Interest" data-ko="관심 서비스">관심 서비스</label>
+                            <select name="service">
+                                <option value="" data-en="Select a service" data-ko="서비스 선택">서비스 선택</option>
+                                <option value="structural" data-en="Wind Effects on Structural Systems" data-ko="구조 시스템 풍하중">구조 시스템 풍하중</option>
+                                <option value="facade" data-en="Wind Effects on Façade Systems" data-ko="파사드 시스템 풍하중">파사드 시스템 풍하중</option>
+                                <option value="stack" data-en="Stack Effect" data-ko="연돌 효과">연돌 효과</option>
+                                <option value="pedestrian" data-en="Pedestrian Comfort" data-ko="보행자 쾌적성">보행자 쾌적성</option>
+                                <option value="other" data-en="Other Services" data-ko="기타 서비스">기타 서비스</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Message" data-ko="메시지">메시지 *</label>
+                            <textarea name="message" rows="5" required 
+                                      placeholder="문의하실 내용을 입력해주세요." 
+                                      data-ko-placeholder="문의하실 내용을 입력해주세요." 
+                                      data-en-placeholder="Please describe your inquiry."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" data-en="Send Message" data-ko="메시지 보내기">
+                            메시지 보내기
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                    <p data-en="World-class building performance engineering solutions" data-ko="세계적 수준의 건축물 성능 엔지니어링 솔루션">
+                        세계적 수준의 건축물 성능 엔지니어링 솔루션
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>    
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+    	(function() {
+        	// [설정] 본인의 EmailJS Public Key를 입력하세요
+        	emailjs.init("y7DoChGEfO7PIvmq9"); 
+    	})();
+	</script>
+	<script>
+    	document.getElementById('contactForm').addEventListener('submit', function(event) {
+        	event.preventDefault(); // 폼의 기본 제출 동작 막기 (새로고침 방지)
+        	
+        	// 버튼 텍스트 변경 (전송 중...)
+        	const btn = this.querySelector('.submit-btn');
+        	const originalText = btn.textContent;
+        	btn.textContent = '전송 중...';
+        	btn.disabled = true;
+
+        	// EmailJS로 전송 (Service ID, Template ID 입력 필요)
+        	// 'contact_form': EmailJS 템플릿의 변수들과 input name이 일치해야 함
+        	emailjs.sendForm('service_kr9vlnn', 'template_gwcjhyr', this)
+            .then(function() {
+                alert('문의가 성공적으로 발송되었습니다!');
+                window.location.reload(); // 성공 후 새로고침
+            }, function(error) {
+                alert('메일 발송에 실패했습니다: ' + JSON.stringify(error));
+                btn.textContent = originalText;
+                btn.disabled = false;
+            });
+    	});  
+	</script>   
+</body>
+</html>

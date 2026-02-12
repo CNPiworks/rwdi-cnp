@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stack Effect Analysis & Mitigation - RWDI & CNP Building Performance Engineering">
+    <title>Stack Effect | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Building Physics" data-ko="건물 물리">건물 물리</span>
+                <h1 data-en="Stack Effect" data-ko="연돌 효과 (Stack Effect)">연돌 효과 (Stack Effect)</h1>
+                <p class="hero-lead" data-en="We help you understand and mitigate (or exploit) stack effect—that is, the effect of temperature differences between a building's inside and outside. Stack effect can be useful; it contributes to natural ventilation. However, when poorly managed, it can exert strong pressure force on doors, partitions and facades. This force causes problems that range from irritating to dangerous, especially in tall buildings." data-ko="우리는 건물 내부와 외부의 온도 차이로 인한 연돌 효과를 이해하고 완화(또는 활용)하도록 돕습니다. 연돌 효과는 자연 환기에 기여하므로 유용할 수 있습니다. 그러나 관리가 부실하면 문, 파티션, 파사드에 강한 압력을 가할 수 있습니다. 이 힘은 특히 고층 건물에서 짜증스러운 것부터 위험한 것까지 다양한 문제를 일으킵니다.">
+                    [cite_start]We help you understand and mitigate (or exploit) stack effect—that is, the effect of temperature differences between a building's inside and outside. Stack effect can be useful; it contributes to natural ventilation. However, when poorly managed, it can exert strong pressure force on doors, partitions and facades. This force causes problems that range from irritating to dangerous, especially in tall buildings. [cite: 338-341]
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Design out stack effect problems." data-ko="연돌 효과 문제를 설계 단계에서 제거합니다.">
+                        연돌 효과 문제를 설계 단계에서 제거합니다.
+                    </p>
+                    <br>
+                    <p data-en="Use natural ventilation effectively within a sustainable design strategy." data-ko="지속 가능한 설계 전략 내에서 자연 환기를 효과적으로 사용합니다.">
+                        지속 가능한 설계 전략 내에서 자연 환기를 효과적으로 사용합니다.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Integrate desirable outdoor features without adverse effects." data-ko="부작용 없이 바람직한 야외 기능을 통합합니다.">
+                        부작용 없이 바람직한 야외 기능을 통합합니다.
+                    </p>
+                    <br>
+                    <p data-en="Reduce operating costs by controlling energy loss." data-ko="에너지 손실을 제어하여 운영 비용을 절감합니다.">
+                        에너지 손실을 제어하여 운영 비용을 절감합니다.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Mitigate adverse effects with cost-effective strategies." data-ko="비용 효율적인 전략으로 부정적인 영향을 완화합니다.">
+                        비용 효율적인 전략으로 부정적인 영향을 완화합니다.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Verify designs will meet building code requirements for door force." data-ko="설계가 도어 개폐력에 대한 건축 법규 요구 사항을 충족하는지 검증합니다.">
+                        설계가 도어 개폐력에 대한 건축 법규 요구 사항을 충족하는지 검증합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Problem & Solution" data-ko="문제와 해결책">문제와 해결책</span>
+                    <h2 data-en="Understanding Stack Effect" data-ko="연돌 효과의 이해">연돌 효과의 이해</h2>
+                    <p class="project-desc" data-en="Air leakage around elevator shafts, like the one shown here, is a frequent culprit in stack effect problems." data-ko="여기 보이는 것과 같이 엘리베이터 샤프트 주변의 공기 누출은 연돌 효과 문제의 흔한 원인입니다.">
+                        [cite_start]Air leakage around elevator shafts, like the one shown here, is a frequent culprit in stack effect problems. [cite: 337]
+                    </p>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Impact" data-ko="영향">영향</strong>
+                            <span data-en="Safety, Comfort, Energy" data-ko="안전, 쾌적성, 에너지 효율">안전, 쾌적성, 에너지 효율</span>
+                        </li>
+                        <li>
+                            <strong data-en="Outcome" data-ko="결과">결과</strong>
+                            <span data-en="Balanced cost and benefit" data-ko="비용과 이점의 균형">비용과 이점의 균형</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-visual">
+                    <img src="../images/stack-effect.png" width="800" height="500" class="responsive-png" alt="Stack Effect in Elevator Shaft">
+                    <p class="img-caption">Visualized: Air leakage around elevator shafts contributing to stack effect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solar Services & Daylighting Analysis - RWDI & CNP Building Performance Engineering">
+    <title>Solar Services | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .single-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px 40px;
+        }
+        .service-list-formatted {
+            margin-top: 20px;
+        }
+        .service-header {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .service-item {
+            margin-bottom: 20px;
+        }
+        .service-item strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .service-item p {
+            margin: 0;
+            line-height: 1.6;
+            color: #666;
+            font-size: 0.95rem;
+        }      
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Solar Engineering" data-ko="태양광 엔지니어링">태양광 엔지니어링</span>
+                <h1 data-en="Solar Services" data-ko="솔라 서비스 (Solar Services)">솔라 서비스 (Solar Services)</h1>
+                <p class="hero-lead" data-en="The built environment is vulnerable to the effects of solar radiation—but we can help by quantifying how your project will be affected, starting early in the process. With such data, you can make better decisions, ranging from siting to power generation to occupant comfort." data-ko="건축 환경은 태양 복사열의 영향에 취약하지만, 초기 단계부터 귀하의 프로젝트가 어떤 영향을 받을지 정량화하여 도움을 드릴 수 있습니다. 이러한 데이터를 통해 입지 선정부터 전력 생산, 거주자 쾌적성에 이르기까지 더 나은 결정을 내릴 수 있습니다.">
+                    [cite_start]The built environment is vulnerable to the effects of solar radiation—but we can help by quantifying how your project will be affected, starting early in the process. With such data, you can make better decisions, ranging from siting to power generation to occupant comfort. [cite: 398, 399]
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Design premium spaces with meticulously considered lighting and views, while balancing operational considerations." data-ko="운영상의 고려 사항을 균형 있게 유지하면서, 조명과 전망을 꼼꼼하게 고려한 프리미엄 공간을 설계합니다.">
+                        Design premium spaces with meticulously considered lighting and views, while balancing operational considerations.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Site and optimize solar power arrays, especially where the wind climate is challenging." data-ko="특히 바람 환경이 까다로운 곳에서 태양광 발전 어레이의 위치를 선정하고 최적화합니다.">
+                        Site and optimize solar power arrays, especially where the wind climate is challenging.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Understand and manage solar-related tradeoffs in sustainable design, including effects on power generation, daylighting, passive energy management, HVAC efficiency, and occupant comfort." data-ko="전력 생산, 자연 채광, 패시브 에너지 관리, HVAC 효율성 및 거주자 쾌적성에 미치는 영향을 포함하여, 지속 가능한 설계에서 태양광 관련 상충 관계를 이해하고 관리합니다.">
+                        Understand and manage solar-related tradeoffs in sustainable design, including effects on power generation, daylighting, passive energy management, HVAC efficiency, and occupant comfort.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Quantify the extent of shadows to meet reporting requirements." data-ko="보고 요구 사항을 충족하기 위해 그림자의 범위를 정량화합니다.">
+                        Quantify the extent of shadows to meet reporting requirements.
+                    </p>
+                    <br>
+                    <p data-en="Avoid or mitigate adverse solar-related conditions (glare, shadow, heat)." data-ko="부정적인 태양 관련 조건(눈부심, 그림자, 열)을 피하거나 완화합니다.">
+                        Avoid or mitigate adverse solar-related conditions (glare, shadow, heat).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Service Details" data-ko="서비스 상세">서비스 상세</span>
+                    <h2 data-en="Comprehensive Solar Services" data-ko="포괄적인 솔라 서비스">포괄적인 솔라 서비스</h2>
+                    
+                    <div class="service-list-formatted">
+                        <span class="service-header" data-en="Services" data-ko="서비스">Services</span>
+                        
+                        <div class="service-item">
+                            <strong data-en="Solar Studies" data-ko="일조 분석 (Solar Studies)">Solar Studies</strong>
+                            <p data-en="We quantify how sunlight and buildings interact, not only in terms of daylight to the interior, but also heat gain (interior and exterior), glare and shadow. We use the results to advise on a wide range of design and mitigation issues." data-ko="우리는 내부로의 채광뿐만 아니라 열 획득(내부 및 외부), 눈부심 및 그림자 측면에서 햇빛과 건물이 상호 작용하는 방식을 정량화합니다. 이 결과를 사용하여 광범위한 설계 및 완화 문제에 대해 조언합니다.">
+                                [cite_start]We quantify how sunlight and buildings interact, not only in terms of daylight to the interior, but also heat gain (interior and exterior), glare and shadow. We use the results to advise on a wide range of design and mitigation issues. [cite: 244-246]
+                            </p>
+                        </div>
+
+                        <div class="service-item">
+                            <strong data-en="Daylighting" data-ko="자연 채광 (Daylighting)">Daylighting</strong>
+                            <p data-en="We use computer modeling to help you balance the positive and negative attributes of daylight, to create a comfortable, sustainable and profitable project." data-ko="컴퓨터 모델링을 사용하여 자연광의 긍정적 속성과 부정적 속성의 균형을 맞춰 쾌적하고 지속 가능하며 수익성 있는 프로젝트를 만들도록 돕습니다.">
+                                [cite_start]We use computer modeling to help you balance the positive and negative attributes of daylight, to create a comfortable, sustainable and profitable project. [cite: 247-248]
+                            </p>
+                        </div>
+
+                        <div class="service-item">
+                            <strong data-en="Wind effects on Solar Energy Systems" data-ko="태양광 시스템에 미치는 풍하중 효과">Wind effects on Solar Energy Systems</strong>
+                            <p data-en="We provide timely, quantitative advice on how to modify array systems for both structural resilience and efficient energy generation." data-ko="구조적 복원력과 효율적인 에너지 생산을 위해 어레이 시스템을 수정하는 방법에 대한 시기적절하고 정량적인 조언을 제공합니다.">
+                                [cite_start]We provide timely, quantitative advice on how to modify array systems for both structural resilience and efficient energy generation. [cite: 249]
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Tools" data-ko="도구">도구</strong>
+                            <span data-en="Proprietary, benchmarked tools" data-ko="독자적이고 벤치마킹된 도구">독자적이고 벤치마킹된 도구</span>
+                        </li>
+                        <li>
+                            <strong data-en="Outcome" data-ko="결과">결과</strong>
+                            <span data-en="Detailed, customized results" data-ko="상세하고 맞춤화된 결과">상세하고 맞춤화된 결과</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-visual">
+                    <img src="../images/solar-services.png" width="800" height="500" class="responsive-png" alt="Solar Interaction Analysis">
+                    <p class="img-caption">Visualized: Analysis of sunlight and building interaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

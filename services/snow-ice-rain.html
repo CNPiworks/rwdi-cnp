@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snow, Ice & Rain Analysis - RWDI & CNP Building Performance Engineering">
+    <title>Snow, Ice & Rain | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .single-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px 40px;
+        }
+
+        /* Services 텍스트 정렬을 위한 스타일 추가 */
+        .service-list-formatted {
+            margin-top: 20px;
+        }
+        .service-header {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .service-item {
+            margin-bottom: 20px;
+        }
+        .service-item strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .service-item p {
+            margin: 0;
+            line-height: 1.6;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* 3. 이미지 2개 가로 배치를 위한 전용 그리드 스타일 */
+        .dual-image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 1:1 비율로 가로 배치 */
+            gap: 15px; /* 이미지 사이 간격 */
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .dual-image-grid img {
+            width: 100%;
+            height: 100%; /* 높이를 꽉 채우게 */
+            min-height: 250px; /* 최소 높이 보장 */
+            object-fit: cover; /* 비율 유지하며 꽉 채우기 */
+            border-radius: 8px;
+        }
+
+        /* 모바일에서는 세로로 변경 */
+        @media (max-width: 768px) {
+            .dual-image-grid {
+                grid-template-columns: 1fr;
+            }        
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#services" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Environmental Performance" data-ko="환경 성능 분석">환경 성능 분석</span>
+                <h1 data-en="Snow, Ice & Rain" data-ko="적설, 결빙 및 강우 (Snow, Ice & Rain)">적설, 결빙 및 강우 (Snow, Ice & Rain)</h1>
+                <p class="hero-lead" data-en="We help you manage precipitation in all its forms and consequences: Snow as it drifts, accumulates, freezes and melts; Rain as it drifts into or accumulates around a structure; Ice as it forms or melts. The physics of all these states and transformations is challenging. We take account of detailed technical factors without losing sight of your big picture." data-ko="우리는 눈이 날리고, 쌓이고, 얼고, 녹는 것, 비가 구조물 안으로 들이치거나 주변에 고이는 것, 얼음이 형성되거나 녹는 것 등 모든 형태와 결과에 따른 강수를 관리하도록 돕습니다. 이 모든 상태와 변형의 물리학은 까다롭습니다. 우리는 귀하의 큰 그림을 놓치지 않으면서 상세한 기술적 요인을 고려합니다.">
+                    We help you manage precipitation in all its forms and consequences: Snow as it drifts, accumulates, freezes and melts; Rain as it drifts into or accumulates around a structure; Ice as it forms or melts. The physics of all these states and transformations is challenging. We take account of detailed technical factors without losing sight of your big picture.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="RWDI is a valuable partner when you seek to..." data-ko="RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다">RWDI는 귀하가 다음을 추구할 때 가치 있는 파트너가 되어드립니다</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="card-number">01</div>
+                    <h3 data-en="Explore Innovations" data-ko="혁신의 탐구">혁신의 탐구</h3>
+                    <p data-en="Innovate and optimize within existing codes." data-ko="기존 규정 내에서 혁신하고 최적화합니다.">
+                        Innovate and optimize within existing codes.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">02</div>
+                    <h3 data-en="Create Opportunities" data-ko="기회의 창출">기회의 창출</h3>
+                    <p data-en="Pinpoint how structure, site and climate factors interact to govern risk." data-ko="구조, 현장 및 기후 요인이 어떻게 상호 작용하여 위험을 지배하는지 정확히 찾아냅니다.">
+                        Pinpoint how structure, site and climate factors interact to govern risk.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">03</div>
+                    <h3 data-en="Meet Challenges" data-ko="도전 과제 해결">도전 과제 해결</h3>
+                    <p data-en="Minimize adverse impacts of precipitation and ice with precise, creative and cost-effective solutions." data-ko="정밀하고 창의적이며 비용 효율적인 솔루션으로 강수 및 결빙의 부정적인 영향을 최소화합니다.">
+                        Minimize adverse impacts of precipitation and ice with precise, creative and cost-effective solutions.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="card-number">04</div>
+                    <h3 data-en="Fulfill Expectations" data-ko="기대 충족">기대 충족</h3>
+                    <p data-en="Develop easy-to-understand documents to communicate risk." data-ko="위험을 전달하기 위해 이해하기 쉬운 문서를 개발합니다.">
+                        Develop easy-to-understand documents to communicate risk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Service Details" data-ko="서비스 상세">서비스 상세</span>
+                    <h2 data-en="Managing Complex Precipitation" data-ko="복합 강수 관리">복합 강수 관리</h2>
+                    
+                    <div class="service-list-formatted">
+                        <span class="service-header" data-en="Services" data-ko="서비스">Services</span>
+                        
+                        <div class="service-item">
+                            <strong data-en="Falling snow and ice" data-ko="낙설 및 낙빙">Falling snow and ice</strong>
+                            <p data-en="We quantify risk over a return period, much like the standard practice for wind loading risks to structures or cladding. We consider a complex set of site- and project-specific factors that 'age' snow and ice and contribute to the likelihood that they will release and fall." data-ko="구조물이나 외장재에 대한 풍하중 위험의 표준 관행과 같이 재현 기간 동안의 위험을 정량화합니다. 눈과 얼음을 '노화'시키고 이것이 떨어질 가능성에 기여하는 복잡한 현장 및 프로젝트별 요인을 고려합니다.">
+                                We quantify risk over a return period, much like the standard practice for wind loading risks to structures or cladding. We consider a complex set of site- and project-specific factors that 'age' snow and ice and contribute to the likelihood that they will release and fall.
+                            </p>
+                        </div>
+
+                        <div class="service-item">
+                            <strong data-en="Snow loading" data-ko="설하중">Snow loading</strong>
+                            <p data-en="We provide fine-tuned snow loading values that are customized to your building or structure and its site. With these values you can make optimum choices for form and materials." data-ko="귀하의 건물 또는 구조물과 그 현장에 맞춤화된 미세 조정된 설하중 값을 제공합니다. 이 값을 통해 형태와 재료에 대한 최적의 선택을 할 수 있습니다.">
+                                We provide fine-tuned snow loading values that are customized to your building or structure and its site. With these values you can make optimum choices for form and materials.
+                            </p>
+                        </div>
+
+                        <div class="service-item">
+                            <strong data-en="Wind-blown snow" data-ko="눈날림">Wind-blown snow</strong>
+                            <p data-en="We use local wind patterns and meteorology to predict how snow particles will be picked up, carried and dropped by the wind near your structure. With this data we pinpoint changes you can make to prevent undesirable accumulations." data-ko="지역 풍력 패턴과 기상을 사용하여 눈 입자가 구조물 근처의 바람에 의해 어떻게 날리고 이동하고 떨어질지 예측합니다. 이 데이터를 통해 원치 않는 축적을 방지하기 위해 변경할 수 있는 부분을 정확히 찾아냅니다.">
+                                We use local wind patterns and meteorology to predict how snow particles will be picked up, carried and dropped by the wind near your structure. With this data we pinpoint changes you can make to prevent undesirable accumulations.
+                            </p>
+                        </div>
+
+                        <div class="service-item">
+                            <strong data-en="Wind-driven rain" data-ko="풍동우">Wind-driven rain</strong>
+                            <p data-en="Wind patterns around a structure can carry rain to unexpected and undesirable places—both outside and inside the structure. We help you spot and avoid such problems." data-ko="구조물 주변의 바람 패턴은 비를 구조물 외부와 내부의 예상치 못하고 원치 않는 장소로 옮길 수 있습니다. 우리는 이러한 문제를 발견하고 피하도록 돕습니다.">
+                                Wind patterns around a structure can carry rain to unexpected and undesirable places—both outside and inside the structure. We help you spot and avoid such problems.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Focus" data-ko="초점">초점</strong>
+                            <span data-en="Meteorology & Fluid dynamics" data-ko="기상학 및 유체 역학">기상학 및 유체 역학</span>
+                        </li>
+                        <li>
+                            <strong data-en="Outcome" data-ko="결과">결과</strong>
+                            <span data-en="Informed decisions on tradeoffs" data-ko="절충안에 대한 정보 기반 의사결정">절충안에 대한 정보 기반 의사결정</span>
+                        </li>
+                    </ul>
+                </div>
+
+              <div class="dual-project-visual">
+				<div class="dual-image-grid">
+                    <img src="../images/snow-ice-rain-2.png" width="800" height="250" class="responsive-png" style="height: auto; max-height: 300px; object-fit: cover; border-radius: 8px;" alt="Ice formation on poles">                    
+                    <img src="../images/snow-ice-rain-1.png" width="800" height="250" class="responsive-png" style="height: auto; max-height: 300px; object-fit: cover; border-radius: 8px;" alt="Snowy settlement">                    
+                    <p class="img-caption">Visualized: Snow accumulation and ice formation analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
