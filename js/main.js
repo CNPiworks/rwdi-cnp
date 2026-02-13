@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.navigationManager = new NavigationManager();
     window.contactFormManager = new ContactFormManager();
     window.scrollAnimations = new ScrollAnimations();
-
+    
     // Add loading animation
     document.body.style.opacity = '0';
     setTimeout(() => {
