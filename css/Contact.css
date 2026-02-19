@@ -401,16 +401,87 @@ body {
 }
 
 @media (max-width: 768px) {
-    .form-grid-row {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0 0 0;
+    }
+
+    .nav-logos {
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 20px 10px 20px;
+        
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .nav-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link {
+        margin: 0 15px 0 0;
+        padding: 5px;
+        font-size: 0.95rem;
+    }
+
+    .nav-dropdown {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .dropdown-content {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 120px;
+        z-index: 1000;
+    }
+
+    .lang-toggle {
+        flex-shrink: 0; 
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    
+    .featured-grid {
         grid-template-columns: 1fr;
     }
-    .contact-form-box {
-        padding: 30px;
+    
+    .services-grid {
+        grid-template-columns: 1fr;
     }
-    .contact-hero {
-        padding: 120px 0 60px;
+    
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
     }
-    .contact-hero h1 {
-        font-size: 2rem;
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-title {
+        white-space: normal;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
 }
