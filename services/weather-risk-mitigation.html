@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stack Effect Analysis & Mitigation - RWDI & CNP Building Performance Engineering">
+    <title>Stack Effect | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        .dual-image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 1:1 비율로 가로 배치 */
+            gap: 15px; /* 이미지 사이 간격 */
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .dual-image-grid img {
+            width: 100%;
+            height: 100%; /* 높이를 꽉 채우게 */
+            min-height: 250px; /* 최소 높이 보장 */
+            object-fit: cover; /* 비율 유지하며 꽉 채우기 */
+            border-radius: 8px;
+        }
+
+        /* 모바일에서는 세로로 변경 */
+        @media (max-width: 768px) {
+            .dual-image-grid {
+                grid-template-columns: 1fr;
+            }
+        }        
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#featured" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Building Physics" data-ko="건물 물리">건물 물리</span>
+				<h1 data-en="Assessment of Snow, Ice, and Rain Impacts and Risk Mitigation Design" 
+    				data-ko="적설, 빙설, 강우 영향 평가와 리스크 저감 설계">
+    				적설, 빙설, 강우 영향 평가와 리스크 저감 설계
+				</h1>
+				<p class="hero-lead" 
+   					data-en="Beyond being simple natural phenomena, snow, rain, and ice can lead to unexpected problems in terms of structural safety, serviceability, and maintenance when combined with a building's geometry, layout, and surrounding wind environment. In particular, when snow and rain concentrate in specific areas due to wind or migrate and accumulate in ways that differ from general design assumptions, various risks such as localized overloading, leakage, freezing, and falling hazards can occur. To identify and reasonably respond to these issues in advance, precise impact assessments reflecting actual environmental conditions are required from the early design stages. Snow load evaluation is not solely dependent on uniform values provided in standard codes, but is conducted by comprehensively considering the target site's climatic conditions, building geometry, wind environment, and thermal characteristics. Through this, we can secure structural safety while preventing unnecessary overdesign, deriving an optimal design that satisfies both safety and economic efficiency. Especially for large-scale, complex-shaped buildings or high-rise structures, this customized snow load analysis plays a crucial role in design rationalization. Evaluating the behavior of snow and rain combined with wind focuses on predicting problems that may occur across the envelope, openings, and outdoor spaces. By analyzing in advance the phenomenon of snow or rain accumulating in specific areas or infiltrating the building interior due to wind, maintenance burdens such as potential leaks, degraded drainage performance, and cladding damage can be effectively reduced. These analysis results are linked to practical design alternatives, including improvements in cladding details, drainage planning, and building layout and geometry. Furthermore, by systematically evaluating the processes of snow and ice accretion, aging, and detachment to quantitatively analyze the potential for falling snow and ice, the risk of safety accidents for pedestrians and adjacent facilities can be proactively reduced. This goes beyond simple accident prevention and serves as an important foundation for enhancing the usability of outdoor spaces and ensuring public safety. Comprehensive snow, rain, and ice impact assessments and risk mitigation design are core design support technologies that improve a building's long-term durability and maintenance efficiency while realizing a safe and reliable built environment." 
+   					data-ko="눈과 비, 얼음은 단순한 자연 현상을 넘어 건물의 형상과 배치, 주변 풍환경과 결합될 경우 구조 안전과 사용성, 유지관리 측면에서 예상하지 못한 문제로 이어질 수 있습니다. 특히 바람의 영향으로 눈과 비가 특정 부위에 집중되거나, 일반적인 설계 가정과 다른 방식으로 이동·집적되는 경우에는 국부적인 과하중, 누수, 결빙, 낙하 위험 등 다양한 리스크가 발생할 수 있습니다. 이러한 문제를 사전에 파악하고 합리적으로 대응하기 위해서는 설계 초기 단계부터 실제 환경 조건을 반영한 정밀한 영향 평가가 필요합니다. 적설하중 평가는 단순히 기준서에 제시된 일률적인 값에 의존하는 것이 아니라, 대상 부지의 기후 조건, 건물 형상, 풍환경, 열적 특성을 종합적으로 고려하여 수행됩니다. 이를 통해 구조 안전을 확보하는 동시에 불필요한 과대 설계를 방지하고, 안전성과 경제성을 모두 만족하는 최적의 설계안을 도출할 수 있습니다. 특히 대규모·복합 형상의 건물이나 고층 건축물의 경우, 이러한 맞춤형 적설하중 분석은 설계 합리화에 중요한 역할을 합니다. 바람과 결합된 눈과 비의 거동에 대한 평가는 외피와 개구부, 외부 공간 전반에서 발생할 수 있는 문제를 예측하는 데 중점을 둡니다. 바람에 의해 눈이나 비가 특정 부위로 몰리거나 건물 내부로 유입되는 현상을 사전에 분석함으로써, 누수 가능성, 배수 성능 저하, 외장재 손상과 같은 유지관리 부담을 효과적으로 줄일 수 있습니다. 이러한 분석 결과는 외장 디테일, 배수 계획, 건물 배치 및 형상 개선 등 실질적인 설계 대안으로 연계됩니다. 아울러 눈과 얼음의 부착, 노화, 이탈 과정을 체계적으로 평가하여 낙설·낙빙 가능성을 정량적으로 분석함으로써, 보행자와 인접 시설에 대한 안전사고 위험을 사전에 저감할 수 있습니다. 이는 단순한 사고 예방을 넘어, 외부 공간의 사용성을 높이고 공공 안전을 확보하는 데 중요한 기반이 됩니다. 종합적인 적설·강우·빙설 영향 평가와 리스크 저감 설계는 건물의 장기적인 내구성과 유지관리 효율을 향상시키는 동시에, 안전하고 신뢰할 수 있는 건축 환경을 구현하는 핵심적인 설계 지원 기술입니다.">
+    				눈과 비, 얼음은 단순한 자연 현상을 넘어 건물의 형상과 배치, 주변 풍환경과 결합될 경우 구조 안전과 사용성, 유지관리 측면에서 예상하지 못한 문제로 이어질 수 있습니다. 특히 바람의 영향으로 눈과 비가 특정 부위에 집중되거나, 일반적인 설계 가정과 다른 방식으로 이동·집적되는 경우에는 국부적인 과하중, 누수, 결빙, 낙하 위험 등 다양한 리스크가 발생할 수 있습니다. 이러한 문제를 사전에 파악하고 합리적으로 대응하기 위해서는 설계 초기 단계부터 실제 환경 조건을 반영한 정밀한 영향 평가가 필요합니다. 적설하중 평가는 단순히 기준서에 제시된 일률적인 값에 의존하는 것이 아니라, 대상 부지의 기후 조건, 건물 형상, 풍환경, 열적 특성을 종합적으로 고려하여 수행됩니다. 이를 통해 구조 안전을 확보하는 동시에 불필요한 과대 설계를 방지하고, 안전성과 경제성을 모두 만족하는 최적의 설계안을 도출할 수 있습니다. 특히 대규모·복합 형상의 건물이나 고층 건축물의 경우, 이러한 맞춤형 적설하중 분석은 설계 합리화에 중요한 역할을 합니다. 바람과 결합된 눈과 비의 거동에 대한 평가는 외피와 개구부, 외부 공간 전반에서 발생할 수 있는 문제를 예측하는 데 중점을 둡니다. 바람에 의해 눈이나 비가 특정 부위로 몰리거나 건물 내부로 유입되는 현상을 사전에 분석함으로써, 누수 가능성, 배수 성능 저하, 외장재 손상과 같은 유지관리 부담을 효과적으로 줄일 수 있습니다. 이러한 분석 결과는 외장 디테일, 배수 계획, 건물 배치 및 형상 개선 등 실질적인 설계 대안으로 연계됩니다. 아울러 눈과 얼음의 부착, 노화, 이탈 과정을 체계적으로 평가하여 낙설·낙빙 가능성을 정량적으로 분석함으로써, 보행자와 인접 시설에 대한 안전사고 위험을 사전에 저감할 수 있습니다. 이는 단순한 사고 예방을 넘어, 외부 공간의 사용성을 높이고 공공 안전을 확보하는 데 중요한 기반이 됩니다. 종합적인 적설·강우·빙설 영향 평가와 리스크 저감 설계는 건물의 장기적인 내구성과 유지관리 효율을 향상시키는 동시에, 안전하고 신뢰할 수 있는 건축 환경을 구현하는 핵심적인 설계 지원 기술입니다.
+				</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+                    <span class="project-label" data-en="Problem & Solution" data-ko="문제와 해결책">문제와 해결책</span>
+					<h2 data-en="Understanding the Effects of Snow, Ice, and Rain" 
+    					data-ko="적설, 빙설 및 강우 영향의 이해">
+    					적설, 빙설 및 강우 영향의 이해
+					</h2>
+					<p class="project-desc" 
+   						data-en="RWDI utilizes scale models to experimentally investigate snow distribution patterns, especially when designs are complex. Because the physical behavior of snow and wind is similar to that of sand and water, we simulate snowstorm phenomena using special sand in a water flume." 
+   						data-ko="RWDI는 설계가 복잡한 경우 특히 적설 분포 패턴을 실험적으로 규명하기 위해 축소모형을 활용합니다. 눈과 바람의 물리적 거동은 모래와 물의 거동과 유사하기 때문에, 우리는 수로(water flume)에서 특수 모래를 사용하여 눈보라 현상을 모사합니다.">
+    					RWDI는 설계가 복잡한 경우 특히 적설 분포 패턴을 실험적으로 규명하기 위해 축소모형을 활용합니다. 눈과 바람의 물리적 거동은 모래와 물의 거동과 유사하기 때문에, 우리는 수로(water flume)에서 특수 모래를 사용하여 눈보라 현상을 모사합니다.
+					</p>
+                    <ul class="project-stats">
+                        <li>
+                            <strong data-en="Impact" data-ko="영향">영향</strong>
+                            <span data-en="Safety, Comfort, Energy" data-ko="안전, 쾌적성, 에너지 효율">안전, 쾌적성, 에너지 효율</span>
+                        </li>
+                        <li>
+                            <strong data-en="Outcome" data-ko="결과">결과</strong>
+                            <span data-en="Balanced cost and benefit" data-ko="비용과 이점의 균형">비용과 이점의 균형</span>
+                        </li>
+                    </ul>
+                </div>
+				<div class="dual-project-visual">
+                    <div class="dual-image-grid">
+                        <img src="../images/snow-loading-1.png" alt="Physical snow model test">
+                        <img src="../images/snow-loading-2.png" alt="Computational snow load analysis">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -418,7 +418,7 @@ html[lang="en"] .hero-title {
     background: linear-gradient(135deg, #00b8a9, #00d9c8);
 }
 
-.featured-card[data-service="stack-effect"] .featured-card-icon {
+.featured-card[data-service="weather-risk-mitigation"] .featured-card-icon {
     background: linear-gradient(135deg, #e63946, #ff6b6b);
 }
 
@@ -710,6 +710,19 @@ html[lang="en"] .hero-title {
     line-height: 1.6;
     font-weight: 500;
     word-break: keep-all;
+}
+
+.service-desc-box .desc-main {
+    display: block;       
+    margin-bottom: 6px;   
+}
+
+.service-desc-box .desc-sub {
+    display: block;       
+    font-size: 0.9em;    
+    color: #555;         
+    line-height: 1.4;
+    white-space: normal; 
 }
 
 /* 모바일 반응형 스타일 */

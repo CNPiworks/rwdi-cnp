@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bridge Aerodynamics & Wind Engineering - RWDI & CNP Building Performance Engineering">
+    <title>Bridge Aerodynamics | RWDI & CNP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 헤더 글자 밀림 방지 */
+        .hero-section h1 {
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+
+        /* 포트폴리오/연관 서비스 섹션 스타일 */
+        .portfolio-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: left;
+        }
+        .portfolio-group {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-group h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .portfolio-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-group li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .portfolio-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .single-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="../index.html">
+                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    <div class="dropdown-content">
+                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    </div>
+                </div>                
+                <a href="../index.html#featured" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active">KOR</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option">ENG</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-en="Structural Aerodynamics" data-ko="구조 공기역학">구조 공기역학</span>
+                <h1 data-en="Support Technologies for Carbon Reduction and Eco-Friendly Design" 
+    				data-ko="탄소저감 및 친환경 설계를 위한 지원기술 제공">
+    				탄소저감 및 친환경 설계를 위한 지원기술 제공
+				</h1>
+				<p class="hero-lead" 
+   					data-en="Sunlight, wind, and airflow are key natural elements that determine a building's energy performance and indoor/outdoor environmental quality. By scientifically analyzing these elements and reflecting them in the design, buildings can utilize natural conditions more efficiently without relying excessively on mechanical equipment. Beyond simple environmental improvements, this becomes an essential design strategy to simultaneously achieve reduced energy use and lower carbon emissions. Solar and insolation analysis provides a direct basis for building layout and geometry, envelope design, and solar facility planning. By precisely evaluating insolation levels and distribution, we maximize the potential for utilizing solar energy and support rational design decisions that reduce cooling loads caused by excessive solar radiation. Through this, energy production efficiency is increased while heating and cooling energy consumption is reduced, thereby improving the building's overall energy performance and carbon reduction effects. Meanwhile, analyzing the movement of air pollution and exhaust gases is essential for creating a healthy and comfortable indoor and outdoor environment. By predicting the migration paths of pollutants and exhaust air considering the effects of wind, building geometry, and the surrounding environment, we can prevent recirculation or localized accumulation and avoid the degradation of indoor air quality. This approach also contributes to reducing unnecessary ventilation energy use and alleviating long-term maintenance burdens. Such an integrated analysis of sun, wind, and airflow enables designs that simultaneously consider the effective use of natural ventilation, reduction of energy loss, and improvement of indoor and outdoor environmental quality. Furthermore, by providing evidence to simultaneously achieve sustainability certification compliance and long-term operational performance improvement, we support the realization of a built environment that balances environmental value and economic feasibility." 
+   					data-ko="태양빛과 바람, 공기의 흐름은 건물의 에너지 성능과 실내외 환경 품질을 결정짓는 핵심적인 자연 요소입니다. 이러한 요소를 과학적으로 분석하고 설계에 반영함으로써, 건물은 기계 설비에 과도하게 의존하지 않고도 자연 조건을 보다 효율적으로 활용할 수 있습니다. 이는 단순한 환경 개선을 넘어, 에너지 사용 저감과 탄소 배출 감소를 동시에 달성하기 위한 중요한 설계 전략이 됩니다. 태양광 및 일사 분석은 건물의 배치와 형상, 외피 설계, 태양광 설비 계획에 직접적인 근거를 제공합니다. 일사량과 일사 분포를 정밀하게 평가함으로써 태양에너지 활용 가능성을 극대화하고, 과도한 일사로 인한 냉방 부하를 줄이는 합리적인 설계 결정을 지원합니다. 이를 통해 에너지 생산 효율을 높이는 동시에 냉·난방 에너지 소비를 저감하여, 건물의 전반적인 에너지 성능과 탄소 저감 효과를 향상시킬 수 있습니다. 한편, 공기 오염과 배출 가스의 이동에 대한 분석은 건강하고 쾌적한 실내외 환경을 조성하는 데 필수적인 요소입니다. 바람과 건물 형상, 주변 환경의 영향을 고려하여 오염물질과 배출 공기의 이동 경로를 예측함으로써, 재순환이나 국부적 축적을 방지하고 실내 공기질 저하를 예방할 수 있습니다. 이러한 접근은 불필요한 환기 에너지 사용을 줄이고, 장기적인 유지관리 부담을 완화하는 데에도 기여합니다. 이와 같은 태양·바람·공기 흐름에 대한 통합 분석은 자연환기의 효과적인 활용, 에너지 손실 저감, 실내외 환경 품질 향상을 동시에 고려한 설계를 가능하게 합니다. 나아가 지속가능성 인증 대응과 장기적인 운영 성능 개선을 함께 달성할 수 있는 근거를 제공함으로써, 환경적 가치와 경제성을 균형 있게 갖춘 건축 환경 구현을 지원합니다.">
+    				태양빛과 바람, 공기의 흐름은 건물의 에너지 성능과 실내외 환경 품질을 결정짓는 핵심적인 자연 요소입니다. 이러한 요소를 과학적으로 분석하고 설계에 반영함으로써, 건물은 기계 설비에 과도하게 의존하지 않고도 자연 조건을 보다 효율적으로 활용할 수 있습니다. 이는 단순한 환경 개선을 넘어, 에너지 사용 저감과 탄소 배출 감소를 동시에 달성하기 위한 중요한 설계 전략이 됩니다. 태양광 및 일사 분석은 건물의 배치와 형상, 외피 설계, 태양광 설비 계획에 직접적인 근거를 제공합니다. 일사량과 일사 분포를 정밀하게 평가함으로써 태양에너지 활용 가능성을 극대화하고, 과도한 일사로 인한 냉방 부하를 줄이는 합리적인 설계 결정을 지원합니다. 이를 통해 에너지 생산 효율을 높이는 동시에 냉·난방 에너지 소비를 저감하여, 건물의 전반적인 에너지 성능과 탄소 저감 효과를 향상시킬 수 있습니다. 한편, 공기 오염과 배출 가스의 이동에 대한 분석은 건강하고 쾌적한 실내외 환경을 조성하는 데 필수적인 요소입니다. 바람과 건물 형상, 주변 환경의 영향을 고려하여 오염물질과 배출 공기의 이동 경로를 예측함으로써, 재순환이나 국부적 축적을 방지하고 실내 공기질 저하를 예방할 수 있습니다. 이러한 접근은 불필요한 환기 에너지 사용을 줄이고, 장기적인 유지관리 부담을 완화하는 데에도 기여합니다. 이와 같은 태양·바람·공기 흐름에 대한 통합 분석은 자연환기의 효과적인 활용, 에너지 손실 저감, 실내외 환경 품질 향상을 동시에 고려한 설계를 가능하게 합니다. 나아가 지속가능성 인증 대응과 장기적인 운영 성능 개선을 함께 달성할 수 있는 근거를 제공함으로써, 환경적 가치와 경제성을 균형 있게 갖춘 건축 환경 구현을 지원합니다.
+				</p>
+            </div>
+        </div>
+    </header>
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+					<span class="project-label" data-en="Solar and Shadow Analysis" data-ko="일조 및 음영 분석">일조 및 음영 분석</span>
+					<h2 data-en="Precise Prediction of Building Shadows" data-ko="건물 음영의 정밀 예측">건물 음영의 정밀 예측</h2>
+					<p class="project-desc" 
+   						data-en="Utilizing RWDI's proprietary software, we can quickly calculate exactly when and where shadows will form, down to the minute." 
+   						data-ko="RWDI의 자체 개발 소프트웨어를 활용하여, 그림자가 정확히 언제, 어디에 형성되는지를 분 단위까지 신속하게 산정할 수 있습니다.">
+    					RWDI의 자체 개발 소프트웨어를 활용하여, 그림자가 정확히 언제, 어디에 형성되는지를 분 단위까지 신속하게 산정할 수 있습니다.
+					</p>
+                </div>
+                <div class="dual-project-visual">
+                    <img src="../images/Eco-Friendly Design.png" width="800" height="500" class="responsive-png" alt="Bridge Aerodynamics Wind Tunnel Test">                    
+                </div>
+            </div>
+        </div>        
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-info">
+				<span class="project-label" data-en="Data-Driven Wind Design" data-ko="데이터 기반 내풍설계">데이터 기반 내풍설계</span>
+					<h2 data-en="Wind Load Optimization for Solar Installations" data-ko="태양광 설비의 풍하중 최적화">태양광 설비의 풍하중 최적화</h2>
+						<p class="project-desc" 
+   							data-en="Existing design codes and guidelines provide wind-resistant design methods based on generalized aerodynamic assumptions, but they struggle to provide accurate results for complex solar panel layouts. Based on experimental data accumulated over 30 years for various layout configurations, RWDI provides detailed wind loads." 
+   							data-ko="기존 설계기준 및 지침은 일반화된 공기역학적 가정으로 내풍설계 방법을 제공하지만, 복잡한 형상의 태양광 판넬 배치에 대해서는 정확한 결과를 제공하기 어렵습니다. RWDI는 다양한 배치 형상에 대해 30년에 걸쳐 축적된 실험 데이터를 기반으로 상세한 풍하중을 제공합니다.">
+    						기존 설계기준 및 지침은 일반화된 공기역학적 가정으로 내풍설계 방법을 제공하지만, 복잡한 형상의 태양광 판넬 배치에 대해서는 정확한 결과를 제공하기 어렵습니다. RWDI는 다양한 배치 형상에 대해 30년에 걸쳐 축적된 실험 데이터를 기반으로 상세한 풍하중을 제공합니다.
+						</p>
+                </div>
+                <div class="dual-project-visual">
+                    <img src="../images/solar-analysis.png" width="800" height="500" class="responsive-png" alt="Bridge Aerodynamics Wind Tunnel Test">                    
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="cta-simple">
+        <div class="container">
+			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            	프로젝트를 최적화할 준비가 되셨나요?
+            </h2>
+            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            </p>	
+            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    </div>
+                <div class="footer-text">
+                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        © 2026 RWDI & CNP 파트너십. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
