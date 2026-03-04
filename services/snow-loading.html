@@ -9,81 +9,6 @@
     <link rel="stylesheet" href="../css/service-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <style>
-        /* 1. 헤더 글자 밀림 방지 */
-        .hero-section h1 {
-            word-break: keep-all;
-            word-wrap: break-word;
-        }
-
-        /* 2. 포트폴리오 섹션 스타일 */
-        .portfolio-groups {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            text-align: left;
-        }
-        .portfolio-group {
-            flex: 1;
-            min-width: 300px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .portfolio-group h3 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .portfolio-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .portfolio-group li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #555;
-            font-weight: 500;
-        }
-        .portfolio-group li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-
-        /* 3. 이미지 2개 가로 배치를 위한 전용 그리드 스타일 */
-        .dual-image-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* 1:1 비율로 가로 배치 */
-            gap: 15px; /* 이미지 사이 간격 */
-            width: 100%;
-            margin-bottom: 15px;
-        }
-        
-        .dual-image-grid img {
-            width: 100%;
-            height: 100%; /* 높이를 꽉 채우게 */
-            min-height: 250px; /* 최소 높이 보장 */
-            object-fit: cover; /* 비율 유지하며 꽉 채우기 */
-            border-radius: 8px;
-        }
-
-        /* 모바일에서는 세로로 변경 */
-        @media (max-width: 768px) {
-            .dual-image-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -122,8 +47,8 @@
             <div class="hero-content">
                 <span class="eyebrow" data-en="Structural Engineering" data-ko="구조 엔지니어링">구조 엔지니어링</span>
                 <h1 data-en="Snow Loading" data-ko="적설 하중(Snow Loading)">적설 하중(Snow Loading)</h1>
-                <p class="hero-lead" data-en="Accumulated snow can severely impact built environment projects of any type. We help you plan for and manage these effects. Getting snow loading right at the design stage lowers both costs and risks. We provide fine-tuned snow loading values customized to your building or structure." data-ko="눈이 쌓이면 모든 유형의 건축 환경 프로젝트에 심각한 영향을 미칠 수 있습니다. 우리는 이러한 영향을 계획하고 관리하도록 돕습니다. 설계 단계에서 설하중을 올바르게 파악하면 비용과 위험을 모두 낮출 수 있습니다. 우리는 귀하의 건물이나 구조물에 맞춤화된 미세 조정된 설하중 값을 제공합니다.">
-                    Accumulated snow can severely impact built environment projects of any type. We help you plan for and manage these effects. Getting snow loading right at the design stage lowers both costs and risks. We provide fine-tuned snow loading values customized to your building or structure.
+                <p class="hero-lead" data-en="Snow accumulation can significantly impact all types of built environment projects. We support the planning and management of these effects. Accurate evaluation of snow loads at the design stage reduces both cost and risk. We provide finely calibrated snow load values tailored to the specific geometry and structural system of each project." data-ko="눈이 쌓이면 모든 유형의 건축 환경 프로젝트에 심각한 영향을 미칠 수 있습니다. 우리는 이러한 영향을 계획하고 관리하도록 돕습니다. 설계 단계에서 설하중을 올바르게 파악하면 비용과 위험을 모두 낮출 수 있습니다. 우리는 귀하의 건물이나 구조물에 맞춤화된 미세 조정된 설하중 값을 제공합니다.">
+                    눈이 쌓이면 모든 유형의 건축 환경 프로젝트에 심각한 영향을 미칠 수 있습니다. 우리는 이러한 영향을 계획하고 관리하도록 돕습니다. 설계 단계에서 설하중을 올바르게 파악하면 비용과 위험을 모두 낮출 수 있습니다. 우리는 귀하의 건물이나 구조물에 맞춤화된 미세 조정된 설하중 값을 제공합니다.
                 </p>
             </div>
         </div>
@@ -134,20 +59,20 @@
             <div class="project-layout">
                 <div class="project-info">
                     <span class="project-label" data-en="Physical Modeling" data-ko="물리적 모델링">물리적 모델링</span>
-                    <h2 data-en="Testing Snow Accumulation" data-ko="적설 패턴 테스트">적설 패턴 테스트</h2>
+                    <h2 data-en="Snow Pattern Testing" data-ko="적설 패턴 테스트">적설 패턴 테스트</h2>
 					<p class="project-desc" 
-   						data-en="RWDI conducts tests utilizing physical models to precisely evaluate snow accumulation patterns, particularly when the building geometry is complex or localized snow behavior is crucial. Based on the fact that the physical behavior of snow and wind is similar to that of sand and water, we realistically simulate blizzards and snow migration processes using special sand in a water flume. Through these physical model tests, it is possible to precisely identify localized snow concentration, accumulation caused by vortices, and nonlinear behavior around complex geometries, which are difficult to grasp through numerical analysis alone. Based on this, we quantify the snow distribution acting on each part of the building and rationally calculate the snow loads applicable for structural design. This allows us to proactively identify potential risks of excessive snow accumulation and falling snow/ice during the design phase, and effectively mitigate these risks through geometry adjustments or design alternatives. As a result, it secures structural safety and serviceability while preventing overdesign, enabling an optimal snow-responsive design that considers both safety and economic efficiency." 
+   						data-en="When building geometry is complex or localized snow drift is critical, RWDI conducts physical model testing to accurately assess snow accumulation patterns. By simulating wind-driven snow behavior in a controlled environment—such as an air–water flume using specially graded particles to replicate snow transport and deposition—we reproduce snow movement processes in a manner consistent with real-world conditions. This approach enables identification of localized snow concentration, wind-induced deposition, and nonlinear accumulation effects around complex geometries that cannot be captured through simplified calculations alone. Based on these results, we derive refined snow load distributions for structural design applications. This allows potential overload risks and snow/ice shedding hazards to be identified early in the design process, and mitigated through appropriate design measures. Ultimately, this ensures structural safety and serviceability while preventing unnecessary overdesign, achieving an optimal balance between safety and economic efficiency." 
    						data-ko="RWDI는 건물 형상이 복잡하거나 국부적인 적설 거동이 중요한 경우, 적설 패턴을 정밀하게 평가하기 위해 물리적 모델을 활용한 시험을 수행합니다. 눈과 바람의 물리적 거동은 모래와 물의 거동과 유사하다는 점에 착안하여, 수조(water flume)에서 특수 모래를 사용해 눈보라와 적설 이동 과정을 실제와 유사하게 시뮬레이션합니다. 이러한 물리 모형 시험을 통해 수치해석만으로는 파악하기 어려운 국부적인 적설 집중, 와류에 의한 퇴적, 복잡한 형상 주변의 비선형 거동을 정밀하게 확인할 수 있습니다. 이를 바탕으로 건물 각 부위에 작용하는 적설 분포를 정량화하고, 구조 설계에 활용 가능한 적설하중을 합리적으로 산정합니다. 이를 통해 설계 단계에서 잠재적인 과적설 위험과 낙설·낙빙 가능성을 사전에 식별하고, 형상 조정이나 설계 대안을 통해 위험을 효과적으로 저감할 수 있습니다. 결과적으로 구조 안전성과 사용성을 확보하는 동시에 과도한 설계를 방지하여, 안전성과 경제성을 모두 고려한 최적의 적설 대응 설계를 가능하게 합니다.">
     					RWDI는 건물 형상이 복잡하거나 국부적인 적설 거동이 중요한 경우, 적설 패턴을 정밀하게 평가하기 위해 물리적 모델을 활용한 시험을 수행합니다. 눈과 바람의 물리적 거동은 모래와 물의 거동과 유사하다는 점에 착안하여, 수조(water flume)에서 특수 모래를 사용해 눈보라와 적설 이동 과정을 실제와 유사하게 시뮬레이션합니다. 이러한 물리 모형 시험을 통해 수치해석만으로는 파악하기 어려운 국부적인 적설 집중, 와류에 의한 퇴적, 복잡한 형상 주변의 비선형 거동을 정밀하게 확인할 수 있습니다. 이를 바탕으로 건물 각 부위에 작용하는 적설 분포를 정량화하고, 구조 설계에 활용 가능한 적설하중을 합리적으로 산정합니다. 이를 통해 설계 단계에서 잠재적인 과적설 위험과 낙설·낙빙 가능성을 사전에 식별하고, 형상 조정이나 설계 대안을 통해 위험을 효과적으로 저감할 수 있습니다. 결과적으로 구조 안전성과 사용성을 확보하는 동시에 과도한 설계를 방지하여, 안전성과 경제성을 모두 고려한 최적의 적설 대응 설계를 가능하게 합니다.
 					</p>
                     <ul class="project-stats">
                         <li>
-                            <strong data-en="Technique" data-ko="기술">기술</strong>
-                            <span data-en="Water flume with special sand" data-ko="특수 모래를 이용한 수조 실험">특수 모래를 이용한 수조 실험</span>
+                            <strong data-en="Technology" data-ko="기술">기술</strong>
+                            <span data-en="Air–water flume testing using specially graded particles" data-ko="특수 모래를 이용한 수조 실험">특수 모래를 이용한 수조 실험</span>
                         </li>
                         <li>
                             <strong data-en="Application" data-ko="적용">적용</strong>
-                            <span data-en="Complex designs & blizzard simulation" data-ko="복잡한 설계 및 눈보라 시뮬레이션">복잡한 설계 및 눈보라 시뮬레이션</span>
+                            <span data-en="Complex design snow drift simulation" data-ko="복잡한 설계 및 눈보라 시뮬레이션">복잡한 설계 및 눈보라 시뮬레이션</span>
                         </li>
                     </ul>
                 </div>
@@ -157,7 +82,7 @@
                         <img src="../images/snow-loading-1.png" alt="Physical snow model test">
                         <img src="../images/snow-loading-2.png" alt="Computational snow load analysis">
 						<p class="img-caption" 
-   							data-en="Visualized: Physical modeling test (left) and computational analysis results (right) for snow loads" 
+   							data-en="Visualized snow accumulation physical model testing (left) and numerical simulation results (right)*" 
    							data-ko="시각화된 적설하중 물리 모형 실험(좌) 및 수치해석 결과(우)">
     						시각화된 적설하중 물리 모형 실험(좌) 및 수치해석 결과(우)
 						</p>

@@ -9,87 +9,6 @@
     <link rel="stylesheet" href="../css/service-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* 헤더 글자 밀림 방지 */
-        .hero-section h1 {
-            word-break: keep-all;
-            word-wrap: break-word;
-        }
-
-        /* 포트폴리오/연관 서비스 섹션 스타일 */
-        .portfolio-groups {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            text-align: left;
-        }
-        .portfolio-group {
-            flex: 1;
-            min-width: 300px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .portfolio-group h3 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .portfolio-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .portfolio-group li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #555;
-            font-weight: 500;
-        }
-        .portfolio-group li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-        
-        .single-list-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px 40px;
-        }
-        .service-list-formatted {
-            margin-top: 20px;
-        }
-        .service-header {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 15px;
-            display: block;
-        }
-        .service-item {
-            margin-bottom: 20px;
-        }
-        .service-item strong {
-            display: block;
-            font-size: 1rem;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-        .service-item p {
-            margin: 0;
-            line-height: 1.6;
-            color: #666;
-            font-size: 0.95rem;
-        }      
-    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -126,10 +45,10 @@
     <header class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <span class="eyebrow" data-en="Solar Engineering" data-ko="태양광 엔지니어링">태양광 엔지니어링</span>
+                <span class="eyebrow" data-en="Solar Energy Engineering" data-ko="태양광 엔지니어링">태양광 엔지니어링</span>
                 <h1 data-en="Solar Services" data-ko="태양광 서비스 (Solar Services)">태양광 서비스 (Solar Services)</h1>
-                <p class="hero-lead" data-en="The built environment is vulnerable to the effects of solar radiation—but we can help by quantifying how your project will be affected, starting early in the process. With such data, you can make better decisions, ranging from siting to power generation to occupant comfort." data-ko="건축 환경은 태양 복사열의 영향에 취약하지만, 초기 단계부터 귀하의 프로젝트가 어떤 영향을 받을지 정량화하여 도움을 드릴 수 있습니다. 이러한 데이터를 통해 입지 선정부터 전력 생산, 거주자 쾌적성에 이르기까지 더 나은 결정을 내릴 수 있습니다.">
-                    [cite_start]The built environment is vulnerable to the effects of solar radiation—but we can help by quantifying how your project will be affected, starting early in the process. With such data, you can make better decisions, ranging from siting to power generation to occupant comfort. [cite: 398, 399]
+                <p class="hero-lead" data-en="The built environment is highly influenced by solar radiation. From the early design stage, we quantify how solar exposure affects your project and provide data-driven support for informed decision-making. These insights assist with decisions ranging from site selection and energy production planning to occupant comfort optimization." data-ko="건축 환경은 태양 복사열의 영향에 취약하지만, 초기 단계부터 귀하의 프로젝트가 어떤 영향을 받을지 정량화하여 도움을 드릴 수 있습니다. 이러한 데이터를 통해 입지 선정부터 전력 생산, 거주자 쾌적성에 이르기까지 더 나은 결정을 내릴 수 있습니다.">
+                    건축 환경은 태양 복사열의 영향에 취약하지만, 초기 단계부터 귀하의 프로젝트가 어떤 영향을 받을지 정량화하여 도움을 드릴 수 있습니다. 이러한 데이터를 통해 입지 선정부터 전력 생산, 거주자 쾌적성에 이르기까지 더 나은 결정을 내릴 수 있습니다.
                 </p>
             </div>
         </div>
@@ -147,23 +66,23 @@
                         
                         <div class="service-item">
                             <strong data-en="Solar Studies" data-ko="일조 분석">Solar Studies</strong>
-							<p data-en="We precisely evaluate the sunlight and shadow impacts formed on buildings and surrounding spaces by considering the sun's trajectory and hourly solar conditions, supporting design and permitting decision-making." 
+							<p data-en="We evaluate solar access and shading effects on buildings and surrounding spaces, considering seasonal and time-dependent variations in solar conditions. The results support design development and regulatory approval processes." 
    								data-ko="태양의 궤적과 시간대별 일사 조건을 고려하여 건물과 주변 공간에 형성되는 일조 및 그림자 영향을 정밀하게 평가하고, 설계·인허가 의사결정을 지원합니다.">
     							태양의 궤적과 시간대별 일사 조건을 고려하여 건물과 주변 공간에 형성되는 일조 및 그림자 영향을 정밀하게 평가하고, 설계·인허가 의사결정을 지원합니다.
 							</p>
                         </div>
 
                         <div class="service-item">
-                            <strong data-en="Daylighting" data-ko="자연 채광">Daylighting</strong>
-							<p data-en="By analyzing the amount and distribution of daylight entering the indoors, we support designs that reduce glare and excessive solar radiation and achieve a balanced securing of comfort and energy efficiency." 
+                            <strong data-en="Daylighting Analysis" data-ko="자연 채광">Daylighting</strong>
+							<p data-en="We analyze the distribution and intensity of natural daylight entering interior spaces to mitigate glare and excessive solar gain, while balancing occupant comfort and energy efficiency." 
    								data-ko="실내로 유입되는 주광의 양과 분포를 분석하여 눈부심과 과도한 일사를 저감하고, 쾌적성과 에너지 효율을 균형 있게 확보하는 설계를 지원합니다.">
     							실내로 유입되는 주광의 양과 분포를 분석하여 눈부심과 과도한 일사를 저감하고, 쾌적성과 에너지 효율을 균형 있게 확보하는 설계를 지원합니다.
 							</p>
                         </div>
 
                         <div class="service-item">
-                            <strong data-en="Solar Energy System Layout" data-ko="태양광 시스템 배치">태양광 시스템 배치</strong>
-							<p data-en="By considering the panel layout method, installation angle, clearance height, and interference effects between arrays, we precisely evaluate the wind loads acting on the solar system and support a rational layout design that ensures structural safety, constructability, and operational stability." 
+                            <strong data-en="Solar System Layout Optimization" data-ko="태양광 시스템 배치">태양광 시스템 배치</strong>
+							<p data-en="Considering panel configuration, installation height, spacing, and shading effects, we assess wind and solar performance impacts on photovoltaic systems. This enables rational layout strategies that ensure structural safety, constructability, and operational stability." 
    								data-ko="패널의 배치 방식, 설치 각도, 이격 높이 및 배열 간 간섭 효과를 고려하여 태양광 시스템에 작용하는 풍하중을 정밀하게 평가하고, 구조 안전성과 시공성, 운영 안정성을 확보할 수 있는 합리적인 배치 설계를 지원합니다.">
     							패널의 배치 방식, 설치 각도, 이격 높이 및 배열 간 간섭 효과를 고려하여 태양광 시스템에 작용하는 풍하중을 정밀하게 평가하고, 구조 안전성과 시공성, 운영 안정성을 확보할 수 있는 합리적인 배치 설계를 지원합니다.
 							</p>
@@ -172,11 +91,11 @@
                     <ul class="project-stats">
                         <li>
                             <strong data-en="Tools" data-ko="도구">도구</strong>
-                            <span data-en="Proprietary, benchmarked tools" data-ko="독자적이고 벤치마킹된 도구">독자적이고 벤치마킹된 도구</span>
+                            <span data-en="Proprietary and Benchmarking-Based Analytical Tools" data-ko="독자적이고 벤치마킹된 도구">독자적이고 벤치마킹된 도구</span>
                         </li>
                         <li>
                             <strong data-en="Outcome" data-ko="결과">결과</strong>
-                            <span data-en="Detailed, customized results" data-ko="상세하고 맞춤화된 결과">상세하고 맞춤화된 결과</span>
+                            <span data-en="Detailed and Project-Specific Results" data-ko="상세하고 맞춤화된 결과">상세하고 맞춤화된 결과</span>
                         </li>
                     </ul>
                 </div>

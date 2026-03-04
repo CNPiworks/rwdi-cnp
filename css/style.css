@@ -263,7 +263,7 @@ body {
     white-space: normal;
     max-width: 900px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;       
 }
 
 /* Korean version - single line */
@@ -278,7 +278,11 @@ html[lang="ko"] .hero-title {
 
 /* When English is displayed */
 html[lang="en"] .hero-title {
-    white-space: normal;
+    white-space: normal;       
+    font-size: clamp(1.2rem, 3.5vw, 2.8rem);     
+    max-width: 1000px;    
+    word-break: normal; 
+    letter-spacing: -0.01em; 
 }
 
 .hero-subtitle {

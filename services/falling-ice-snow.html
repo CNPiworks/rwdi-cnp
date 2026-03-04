@@ -9,62 +9,6 @@
     <link rel="stylesheet" href="../css/service-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* 헤더 글자 밀림 방지 */
-        .hero-section h1 {
-            word-break: keep-all;
-            word-wrap: break-word;
-        }
-
-        /* 포트폴리오/연관 서비스 섹션 스타일 */
-        .portfolio-groups {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            text-align: left;
-        }
-        .portfolio-group {
-            flex: 1;
-            min-width: 300px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .portfolio-group h3 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .portfolio-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .portfolio-group li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #555;
-            font-weight: 500;
-        }
-        .portfolio-group li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-        
-        .single-list-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px 40px;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -104,7 +48,7 @@
                 <span class="eyebrow" data-en="Building Safety & Performance" data-ko="건물 안전 및 성능">건물 안전 및 성능</span>
                 <h1 data-en="Falling Ice & Snow" data-ko="낙하 빙설(Falling Ice) & Snow">낙하 빙설(Falling Ice) & Snow)</h1>
 				<p class="hero-lead" 
-   					data-en="We conduct analysis on snow accumulation and aging to help manage the risk of harmful consequences that can arise from the accumulation and release of snow and ice. Through advanced analysis, risks related to snow and ice can be predicted in advance, enabling appropriate responses. Through this, we can help significantly reduce the frequency and severity of snow or ice falling events from the target structure. Along with expert assessment, RWDI applies its proprietary analytical technology to determine the relative risk of specific design elements. These falling risks are quantified and evaluated based on the target return period for the subject building." 
+   					data-en="We conduct analysis of snow and ice accumulation and aging processes to manage the risks associated with hazardous falling events. Through advanced modeling, potential snow and ice hazards can be predicted in advance, enabling appropriate mitigation strategies. This approach significantly reduces the frequency and severity of falling snow and ice incidents from the target structure. As a specialist in wind engineering, RWDI applies proprietary analytical methods to evaluate the relative risk of such events. Falling hazards are quantified based on project-specific target return periods." 
    					data-ko="눈과 얼음의 적치 및 이탈로 인해 발생할 수 있는 유해한 결과의 위험을 관리할 수 있도록 적설 및 노화(Age)에 대한 분석을 수행합니다. 고급 분석을 통해 눈과 얼음에 대한 위험을 사전에 예측할 수 있으며, 그에 따라 적절한 대응이 가능해집니다. 이를 통해 대상 구조물에서 눈이나 얼음이 낙하하는 사건의 발생 빈도와 심각성을 크게 줄일 수 있도록 도울 수 있습니다. 전문가의 평가와 함께 RWDI는 특정 설계 요소의 상대적인 위험도를 판단하기 위해 자체 개발한 분석기술을 적용합니다. 이러한 낙하 위험은 대상건물에서 목표한 재현기간을 기준으로 정량화되어 평가됩니다.">
     				눈과 얼음의 적치 및 이탈로 인해 발생할 수 있는 유해한 결과의 위험을 관리할 수 있도록 적설 및 노화(Age)에 대한 분석을 수행합니다. 고급 분석을 통해 눈과 얼음에 대한 위험을 사전에 예측할 수 있으며, 그에 따라 적절한 대응이 가능해집니다. 이를 통해 대상 구조물에서 눈이나 얼음이 낙하하는 사건의 발생 빈도와 심각성을 크게 줄일 수 있도록 도울 수 있습니다. 전문가의 평가와 함께 RWDI는 특정 설계 요소의 상대적인 위험도를 판단하기 위해 자체 개발한 분석기술을 적용합니다. 이러한 낙하 위험은 대상건물에서 목표한 재현기간을 기준으로 정량화되어 평가됩니다.
 				</p>
@@ -117,20 +61,20 @@
             <div class="project-layout">
                 <div class="project-info">
                     <span class="project-label" data-en="Risk Management" data-ko="위험 관리">위험 관리</span>
-                    <h2 data-en="Modeling Snow Accumulation & Aging" data-ko="적설 및 노화 모델링">적설 및 노화 모델링</h2>
+                    <h2 data-en="Snow Accumulation and Aging Modeling" data-ko="적설 및 노화 모델링">적설 및 노화 모델링</h2>
 					<p class="project-desc" 
-   						data-en="Based on the detailed conditions of the target building and site, we consider how snow accumulates and 'ages'. Factors we consider to simulate the snow aging process include air temperature, solar radiation, wind forces, building heat loss, the insulation properties of the snow layer, daily freeze-thaw cycles, the surface friction characteristics of building materials, and meltwater drainage paths." 
+   						data-en="Based on detailed site and building conditions, we evaluate how snow accumulates and how it undergoes aging processes. To simulate snow accumulation and melting, key parameters are considered, including snow density, melting heat balance, wind effects, building orientation, insulation performance of snow layers, freeze–thaw cycles, surface friction characteristics of building materials, and meltwater drainage paths." 
    						data-ko="대상 건물과 부지의 세부 조건을 바탕으로, 눈이 어떻게 쌓이고 “노화(Age)”되는지를 고려합니다. 적설 노화 과정을 모사하기 위해 고려하는 요소에는 기온, 태양복사, 풍력, 건물의 열손실, 적설층의 단열 특성, 일일 동결·융해 반복, 건축 재료의 표면 마찰 특성, 그리고 융해수의 배수 경로가 포함됩니다.">
     					대상 건물과 부지의 세부 조건을 바탕으로, 눈이 어떻게 쌓이고 “노화(Age)”되는지를 고려합니다. 적설 노화 과정을 모사하기 위해 고려하는 요소에는 기온, 태양복사, 풍력, 건물의 열손실, 적설층의 단열 특성, 일일 동결·융해 반복, 건축 재료의 표면 마찰 특성, 그리고 융해수의 배수 경로가 포함됩니다.
 					</p>
                     <ul class="project-stats">
                         <li>
-                            <strong data-en="Factors" data-ko="고려 요소">고려 요소</strong>
-                            <span data-en="Temp, Sun, Wind, Heat loss, etc." data-ko="기온, 태양, 바람, 열 손실 등">기온, 태양, 바람, 열 손실 등</span>
+                            <strong data-en="Key Factors Considered" data-ko="고려 요소">고려 요소</strong>
+                            <span data-en="Temperature, solar radiation, wind, heat loss, and related parameters" data-ko="기온, 태양, 바람, 열 손실 등">기온, 태양, 바람, 열 손실 등</span>
                         </li>
                         <li>
                             <strong data-en="Outcome" data-ko="결과">결과</strong>
-                            <span data-en="Cost- and risk-optimized solution" data-ko="비용 및 위험 최적화 솔루션">비용 및 위험 최적화 솔루션</span>
+                            <span data-en="Optimized solutions balancing cost efficiency and risk reduction" data-ko="비용 및 위험 최적화 솔루션">비용 및 위험 최적화 솔루션</span>
                         </li>
                     </ul>
                 </div>

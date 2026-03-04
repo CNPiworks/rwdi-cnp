@@ -9,63 +9,6 @@
     <link rel="stylesheet" href="../css/service-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* 헤더 글자 밀림 방지 */
-        .hero-section h1 {
-            word-break: keep-all;
-            word-wrap: break-word;
-        }
-
-        /* 포트폴리오/연관 서비스 섹션 스타일 */
-        .portfolio-groups {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            text-align: left;
-        }
-        .portfolio-group {
-            flex: 1;
-            min-width: 300px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .portfolio-group h3 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .portfolio-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .portfolio-group li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #555;
-            font-weight: 500;
-        }
-        .portfolio-group li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-        
-        /* 통합된 리스트를 위한 2단 그리드 스타일 (선택 사항) */
-        .single-list-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px 40px;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -102,10 +45,10 @@
     <header class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <span class="eyebrow" data-en="Environmental Performance" data-ko="환경 성능 분석">환경 성능 분석</span>
+                <span class="eyebrow" data-en="Environmental Performance Analysis" data-ko="환경 성능 분석">환경 성능 분석</span>
                 <h1 data-en="Solar Studies" data-ko="일조 분석 (Solar Studies)">일조 분석 (Solar Studies)</h1>
-                <p class="hero-lead" data-en="We quantify how buildings interact with sunlight. By learning in detail how your project responds to the sun, you can: Improve operating efficiency; Improve occupant comfort; Avoid (or mitigate) dangerous or adverse conditions, such as glare and shadow; Optimize your strategies for solar power generation." data-ko="우리는 건물이 햇빛과 상호 작용하는 방식을 정량화합니다. 귀하의 프로젝트가 태양에 어떻게 반응하는지 자세히 파악함으로써 운영 효율성을 개선하고, 거주자의 쾌적함을 향상시키며, 눈부심이나 그림자와 같은 위험하거나 부정적인 조건을 피하고(또는 완화하고), 태양광 발전 전략을 최적화할 수 있습니다.">
-                    We quantify how buildings interact with sunlight. By learning in detail how your project responds to the sun, you can: Improve operating efficiency; Improve occupant comfort; Avoid (or mitigate) dangerous or adverse conditions, such as glare and shadow; Optimize your strategies for solar power generation.
+                <p class="hero-lead" data-en="We quantify how buildings interact with solar radiation. By analyzing how a project responds to sun exposure, we support improved operational efficiency, enhanced occupant comfort, mitigation of glare and excessive shading risks, and optimization of solar energy strategies." data-ko="우리는 건물이 햇빛과 상호 작용하는 방식을 정량화합니다. 귀하의 프로젝트가 태양에 어떻게 반응하는지 자세히 파악함으로써 운영 효율성을 개선하고, 거주자의 쾌적함을 향상시키며, 눈부심이나 그림자와 같은 위험하거나 부정적인 조건을 피하고(또는 완화하고), 태양광 발전 전략을 최적화할 수 있습니다.">
+                    우리는 건물이 햇빛과 상호 작용하는 방식을 정량화합니다. 귀하의 프로젝트가 태양에 어떻게 반응하는지 자세히 파악함으로써 운영 효율성을 개선하고, 거주자의 쾌적함을 향상시키며, 눈부심이나 그림자와 같은 위험하거나 부정적인 조건을 피하고(또는 완화하고), 태양광 발전 전략을 최적화할 수 있습니다.
                 </p>
             </div>
         </div>
@@ -115,24 +58,24 @@
         <div class="container">
             <div class="project-layout">
                 <div class="project-info">
-                    <span class="project-label" data-en="Proprietary Analysis" data-ko="독자적인 분석 기술">독자적인 분석 기술</span>
-					<h2 data-en="Design Support for Comfort and Energy Performance through Sunlight and Shadow Analysis" 
+                    <span class="project-label" data-en="Proprietary Analytical Techniques" data-ko="독자적인 분석 기술">독자적인 분석 기술</span>
+					<h2 data-en="Supporting Comfort and Energy Performance Design through Solar and Shadow Analysis" 
     					data-ko="일조·그림자 분석을 통한 쾌적성 및 에너지 성능 설계 지원">
     					일조·그림자 분석을 통한 쾌적성 및 에너지 성능 설계 지원
 					</h2>
 					<p class="project-desc" 
-   						data-en="The shadow and sunlight analysis service precisely evaluates the shadow and sunlight environments formed on buildings and outdoor spaces, considering the sun's path and seasonal and hourly variations. We support rational decision-making from the early design stages by analyzing the impact of a building's layout, geometry, and height on surrounding buildings and pedestrian spaces. By predicting the extent of shadow formation for specific times and periods, we provide evidence that can be utilized for standards and permitting reviews related to the right to light. Through sunlight analysis, we evaluate the solar radiation and daylight conditions entering indoor and outdoor spaces, supporting designs that consider both comfort and energy performance. We identify in advance the potential for increased cooling loads or glare caused by excessive solar radiation, proposing improvement measures for shading, envelopes, and spatial configuration. In addition, we support maximizing power generation efficiency by precisely analyzing the shading impact when laying out solar installations. Through precise analysis by time of year and down to the minute, we provide results that closely resemble actual use environments, and the analysis results are presented as visualized data so that designers and stakeholders can easily understand and share them. Through this, we can derive actionable design alternatives that satisfy comfort, energy efficiency, and legal compliance." 
+   						data-en="Our solar and shadow assessment services comprehensively evaluate solar paths, seasonal variations, and time-dependent shading effects within the surrounding urban context. We analyze the influence of building orientation, massing, and height on adjacent buildings and pedestrian spaces, supporting rational decision-making from the early design stages. Predicted shadow extents over specified time periods can be used to support compliance with solar access regulations and planning approvals. Through detailed analysis, we evaluate indoor solar gains and daylight conditions, enabling design strategies that balance occupant comfort and energy performance. Potential overheating risks due to excessive solar exposure are identified in advance, and recommendations are provided for improvements to building massing, façade configuration, and space planning. We also assess the impact of shading on photovoltaic system performance to help maximize energy generation efficiency. Hourly and seasonal simulations provide realistic usage scenarios, and results are delivered in clear visual formats to facilitate communication among designers and stakeholders. This integrated approach enables practical design solutions that satisfy comfort, energy efficiency, and regulatory compliance objectives." 
    						data-ko="그림자 및 일조 분석 서비스는 태양의 이동 경로와 계절·시간대 변화를 고려하여 건물과 외부 공간에 형성되는 그림자와 일조 환경을 정밀하게 평가합니다. 건물의 배치, 형상, 높이가 주변 건물과 보행 공간에 미치는 영향을 분석하여 설계 초기 단계부터 합리적인 의사결정을 지원합니다. 특정 시점과 기간에 대한 그림자 형성 범위를 예측해 일조권 관련 기준과 인허가 검토에 활용할 수 있는 근거 자료를 제공합니다. 일조 분석을 통해 실내외 공간으로 유입되는 태양복사와 주광 조건을 평가하고, 쾌적성과 에너지 성능을 함께 고려한 설계를 지원합니다. 과도한 일사로 인한 냉방 부하 증가나 눈부심 발생 가능성을 사전에 파악하여 차양, 외피, 공간 구성에 대한 개선 방안을 제시합니다. 또한 태양광 설비 배치 시 음영 영향을 정밀하게 분석해 발전 효율을 극대화할 수 있도록 지원합니다. 연중 시간대별, 분 단위의 정밀 분석을 통해 실제 사용 환경에 가까운 결과를 제공하며, 분석 결과는 시각화된 자료로 제시되어 설계자와 관계자가 쉽게 이해하고 공유할 수 있습니다. 이를 통해 쾌적성, 에너지 효율, 법적 적합성을 모두 만족하는 실현 가능한 설계 대안을 도출할 수 있습니다.">
     					그림자 및 일조 분석 서비스는 태양의 이동 경로와 계절·시간대 변화를 고려하여 건물과 외부 공간에 형성되는 그림자와 일조 환경을 정밀하게 평가합니다. 건물의 배치, 형상, 높이가 주변 건물과 보행 공간에 미치는 영향을 분석하여 설계 초기 단계부터 합리적인 의사결정을 지원합니다. 특정 시점과 기간에 대한 그림자 형성 범위를 예측해 일조권 관련 기준과 인허가 검토에 활용할 수 있는 근거 자료를 제공합니다. 일조 분석을 통해 실내외 공간으로 유입되는 태양복사와 주광 조건을 평가하고, 쾌적성과 에너지 성능을 함께 고려한 설계를 지원합니다. 과도한 일사로 인한 냉방 부하 증가나 눈부심 발생 가능성을 사전에 파악하여 차양, 외피, 공간 구성에 대한 개선 방안을 제시합니다. 또한 태양광 설비 배치 시 음영 영향을 정밀하게 분석해 발전 효율을 극대화할 수 있도록 지원합니다. 연중 시간대별, 분 단위의 정밀 분석을 통해 실제 사용 환경에 가까운 결과를 제공하며, 분석 결과는 시각화된 자료로 제시되어 설계자와 관계자가 쉽게 이해하고 공유할 수 있습니다. 이를 통해 쾌적성, 에너지 효율, 법적 적합성을 모두 만족하는 실현 가능한 설계 대안을 도출할 수 있습니다.
 					</p>
                     <ul class="project-stats">
                         <li>
                             <strong data-en="Data Source" data-ko="데이터 소스">데이터 소스</strong>
-                            <span data-en="Accurate solar & sky data" data-ko="정확한 태양 및 하늘 데이터">정확한 태양 및 하늘 데이터</span>
+                            <span data-en="Accurate Solar and Climate Data" data-ko="정확한 태양 및 하늘 데이터">정확한 태양 및 하늘 데이터</span>
                         </li>
                         <li>
                             <strong data-en="Outcome" data-ko="결과">결과</strong>
-                            <span data-en="Detailed, customized results" data-ko="상세하고 맞춤화된 결과">상세하고 맞춤화된 결과</span>
+                            <span data-en="Detailed and Project-Specific Results" data-ko="상세하고 맞춤화된 결과">상세하고 맞춤화된 결과</span>
                         </li>
                     </ul>
                 </div>

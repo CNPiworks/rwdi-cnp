@@ -9,62 +9,6 @@
     <link rel="stylesheet" href="../css/service-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* 헤더 글자 밀림 방지 */
-        .hero-section h1 {
-            word-break: keep-all;
-            word-wrap: break-word;
-        }
-
-        /* 포트폴리오/연관 서비스 섹션 스타일 */
-        .portfolio-groups {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            text-align: left;
-        }
-        .portfolio-group {
-            flex: 1;
-            min-width: 300px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .portfolio-group h3 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .portfolio-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .portfolio-group li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #555;
-            font-weight: 500;
-        }
-        .portfolio-group li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-        
-        .single-list-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px 40px;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -102,9 +46,9 @@
         <div class="container">
             <div class="hero-content">
                 <span class="eyebrow" data-en="Sustainability Engineering" data-ko="지속가능성 엔지니어링">지속가능성 엔지니어링</span>
-                <h1 data-en="Wind-driven Rain" data-ko="재생에너지 (Wind-driven Rain)">재생에너지 (Wind-driven Rain)</h1>
-                <p class="hero-lead" data-en="We help you navigate complex options to leverage new opportunities in renewable energy generation. Renewable energy systems often require significant investment and can be a source of uncertainty. We cut through decision and research fatigue, so you can make better decisions sooner, with confidence and finality." data-ko="우리는 귀하가 재생 에너지 발전의 새로운 기회를 활용할 수 있도록 복잡한 옵션을 탐색하도록 돕습니다. 재생 에너지 시스템은 종종 상당한 투자가 필요하며 불확실성의 원인이 될 수 있습니다. 우리는 결정 및 연구 피로를 줄여 귀하가 확신을 가지고 더 빨리 더 나은 결정을 내릴 수 있도록 합니다.">
-                    We help you navigate complex options to leverage new opportunities in renewable energy generation. Renewable energy systems often require significant investment and can be a source of uncertainty. We cut through decision and research fatigue, so you can make better decisions sooner, with confidence and finality.
+                <h1 data-en="Renewable Energy" data-ko="재생에너지">재생에너지</h1>
+                <p class="hero-lead" data-en="We help clients explore complex options to take advantage of new opportunities in renewable energy development. Renewable energy systems often require significant investment and careful validation. We reduce uncertainty and research time, enabling confident and timely decision-making." data-ko="우리는 귀하가 재생 에너지 발전의 새로운 기회를 활용할 수 있도록 복잡한 옵션을 탐색하도록 돕습니다. 재생 에너지 시스템은 종종 상당한 투자가 필요하며 불확실성의 원인이 될 수 있습니다. 우리는 결정 및 연구 피로를 줄여 귀하가 확신을 가지고 더 빨리 더 나은 결정을 내릴 수 있도록 합니다.">
+                    우리는 귀하가 재생 에너지 발전의 새로운 기회를 활용할 수 있도록 복잡한 옵션을 탐색하도록 돕습니다. 재생 에너지 시스템은 종종 상당한 투자가 필요하며 불확실성의 원인이 될 수 있습니다. 우리는 결정 및 연구 피로를 줄여 귀하가 확신을 가지고 더 빨리 더 나은 결정을 내릴 수 있도록 합니다.
                 </p>
             </div>
         </div>
@@ -114,17 +58,17 @@
         <div class="container">
             <div class="project-layout">
                 <div class="project-info">
-                    <span class="project-label" data-en="Context-Aware Solutions" data-ko="맥락 인식 솔루션">맥락 인식 솔루션</span>
-                    <h2 data-en="Solar-Focused Renewable Energy Design Support" data-ko="태양광 중심 재생에너지 설계 지원">태양광 중심 재생에너지 설계 지원</h2>
-					<p class="project-desc" data-en="The performance and economic feasibility of renewable energy systems vary greatly depending on initial design choices, making professional analysis and design support crucial for rational decision-making. Regarding solar power, we provide integrated analysis beyond simple solar radiation assessment, considering building geometry, layout, and the surrounding environment. Through sun and shadow analysis, we precisely evaluate shading conditions and pre-identify factors that could hinder efficiency. Specifically, we provide design support to ensure structural safety by focusing on wind loads according to solar system layout. Wind load variations based on panel angle, height, arrangement, and edge/corner conditions are accurately calculated using wind tunnel testing and numerical analysis. Based on this, we rationally present design loads for panels, support structures, clamps, and anchoring systems. This analysis ensures structural safety while preventing over-design, reducing construction costs and maintenance burdens. Furthermore, by comparing various layout alternatives, we derive the optimal solar system strategy that best fits the site's wind environment and renewable energy goals. Our comprehensive design support aims to implement sustainable energy systems that balance power efficiency, structural safety, and economic feasibility." data-ko="재생에너지 시스템은 초기 설계 단계에서의 선택에 따라 성능과 경제성이 크게 달라지므로, 합리적인 의사결정을 위한 전문적인 분석과 설계 지원이 중요합니다. 태양광 발전과 관련해서는 단순한 일사량 평가를 넘어, 건물 형상과 배치, 주변 환경을 종합적으로 고려한 통합 분석을 제공합니다. 일조 및 그림자 분석을 통해 태양광 설비에 영향을 미치는 음영 조건을 정밀하게 평가하고, 발전 효율을 저해할 수 있는 요소를 사전에 식별합니다. 특히 태양광 시스템 배치에 따른 풍하중을 중점적으로 평가하여 구조 안전성을 확보하는 설계 지원을 제공합니다. 패널의 설치 각도, 높이, 배열 방식, 가장자리 및 코너 조건에 따른 풍하중 변화를 풍동실험과 수치해석을 통해 정밀하게 산정합니다. 이를 바탕으로 패널, 지지 구조물, 클램프 및 앵커링 시스템에 작용하는 설계용 하중을 합리적으로 제시합니다. 이러한 분석을 통해 구조 안전을 확보하는 동시에 과도한 설계를 방지하여 시공 비용과 유지관리 부담을 줄일 수 있습니다. 또한 다양한 배치 대안을 비교·검토함으로써 대상 부지의 풍환경과 재생에너지 목표에 가장 적합한 태양광 시스템 배치 전략을 도출합니다. 종합적인 재생에너지 설계 지원 서비스는 발전 효율, 구조 안전성, 경제성을 균형 있게 만족하는 지속가능한 에너지 시스템 구현을 목표로 합니다.">재생에너지 시스템은 초기 설계 단계에서의 선택에 따라 성능과 경제성이 크게 달라지므로, 합리적인 의사결정을 위한 전문적인 분석과 설계 지원이 중요합니다. 태양광 발전과 관련해서는 단순한 일사량 평가를 넘어, 건물 형상과 배치, 주변 환경을 종합적으로 고려한 통합 분석을 제공합니다. 일조 및 그림자 분석을 통해 태양광 설비에 영향을 미치는 음영 조건을 정밀하게 평가하고, 발전 효율을 저해할 수 있는 요소를 사전에 식별합니다. 특히 태양광 시스템 배치에 따른 풍하중을 중점적으로 평가하여 구조 안전성을 확보하는 설계 지원을 제공합니다. 패널의 설치 각도, 높이, 배열 방식, 가장자리 및 코너 조건에 따른 풍하중 변화를 풍동실험과 수치해석을 통해 정밀하게 산정합니다. 이를 바탕으로 패널, 지지 구조물, 클램프 및 앵커링 시스템에 작용하는 설계용 하중을 합리적으로 제시합니다. 이러한 분석을 통해 구조 안전을 확보하는 동시에 과도한 설계를 방지하여 시공 비용과 유지관리 부담을 줄일 수 있습니다. 또한 다양한 배치 대안을 비교·검토함으로써 대상 부지의 풍환경과 재생에너지 목표에 가장 적합한 태양광 시스템 배치 전략을 도출합니다. 종합적인 재생에너지 설계 지원 서비스는 발전 효율, 구조 안전성, 경제성을 균형 있게 만족하는 지속가능한 에너지 시스템 구현을 목표로 합니다.</p>
+                    <span class="project-label" data-en="Turnkey Solution" data-ko="맥락 인식 솔루션">맥락 인식 솔루션</span>
+                    <h2 data-en="Solar-Centric Renewable Energy Design Support" data-ko="태양광 중심 재생에너지 설계 지원">태양광 중심 재생에너지 설계 지원</h2>
+					<p class="project-desc" data-en="The performance and economic viability of renewable energy systems depend heavily on decisions made during the early planning stages. Therefore, specialized analysis and design support are essential for rational decision-making. For solar power generation, we provide integrated analysis considering solar exposure conditions, building geometry and layout, and surrounding environmental factors. Through solar and shading analysis, we accurately evaluate site conditions and identify factors that may reduce energy efficiency. In particular, wind loads acting on solar systems are assessed in detail to ensure structural safety. We determine project-specific wind loads based on installation angle, elevation, mounting configuration, and site wind conditions through wind tunnel testing and computational analysis. Based on these results, rational design loads are defined for panels, support structures, clamps, and tracking systems. This approach ensures structural stability while preventing overdesign, reducing construction costs and long-term maintenance burdens. By comparing alternative layout options, we identify the most appropriate solar system configuration for site-specific conditions. Our integrated renewable energy engineering services aim to deliver sustainable energy systems that balance power generation efficiency, structural safety, and economic feasibility." data-ko="재생에너지 시스템은 초기 설계 단계에서의 선택에 따라 성능과 경제성이 크게 달라지므로, 합리적인 의사결정을 위한 전문적인 분석과 설계 지원이 중요합니다. 태양광 발전과 관련해서는 단순한 일사량 평가를 넘어, 건물 형상과 배치, 주변 환경을 종합적으로 고려한 통합 분석을 제공합니다. 일조 및 그림자 분석을 통해 태양광 설비에 영향을 미치는 음영 조건을 정밀하게 평가하고, 발전 효율을 저해할 수 있는 요소를 사전에 식별합니다. 특히 태양광 시스템 배치에 따른 풍하중을 중점적으로 평가하여 구조 안전성을 확보하는 설계 지원을 제공합니다. 패널의 설치 각도, 높이, 배열 방식, 가장자리 및 코너 조건에 따른 풍하중 변화를 풍동실험과 수치해석을 통해 정밀하게 산정합니다. 이를 바탕으로 패널, 지지 구조물, 클램프 및 앵커링 시스템에 작용하는 설계용 하중을 합리적으로 제시합니다. 이러한 분석을 통해 구조 안전을 확보하는 동시에 과도한 설계를 방지하여 시공 비용과 유지관리 부담을 줄일 수 있습니다. 또한 다양한 배치 대안을 비교·검토함으로써 대상 부지의 풍환경과 재생에너지 목표에 가장 적합한 태양광 시스템 배치 전략을 도출합니다. 종합적인 재생에너지 설계 지원 서비스는 발전 효율, 구조 안전성, 경제성을 균형 있게 만족하는 지속가능한 에너지 시스템 구현을 목표로 합니다.">재생에너지 시스템은 초기 설계 단계에서의 선택에 따라 성능과 경제성이 크게 달라지므로, 합리적인 의사결정을 위한 전문적인 분석과 설계 지원이 중요합니다. 태양광 발전과 관련해서는 단순한 일사량 평가를 넘어, 건물 형상과 배치, 주변 환경을 종합적으로 고려한 통합 분석을 제공합니다. 일조 및 그림자 분석을 통해 태양광 설비에 영향을 미치는 음영 조건을 정밀하게 평가하고, 발전 효율을 저해할 수 있는 요소를 사전에 식별합니다. 특히 태양광 시스템 배치에 따른 풍하중을 중점적으로 평가하여 구조 안전성을 확보하는 설계 지원을 제공합니다. 패널의 설치 각도, 높이, 배열 방식, 가장자리 및 코너 조건에 따른 풍하중 변화를 풍동실험과 수치해석을 통해 정밀하게 산정합니다. 이를 바탕으로 패널, 지지 구조물, 클램프 및 앵커링 시스템에 작용하는 설계용 하중을 합리적으로 제시합니다. 이러한 분석을 통해 구조 안전을 확보하는 동시에 과도한 설계를 방지하여 시공 비용과 유지관리 부담을 줄일 수 있습니다. 또한 다양한 배치 대안을 비교·검토함으로써 대상 부지의 풍환경과 재생에너지 목표에 가장 적합한 태양광 시스템 배치 전략을 도출합니다. 종합적인 재생에너지 설계 지원 서비스는 발전 효율, 구조 안전성, 경제성을 균형 있게 만족하는 지속가능한 에너지 시스템 구현을 목표로 합니다.</p>
                     <ul class="project-stats">
                         <li>
                             <strong data-en="Analysis" data-ko="분석">분석</strong>
-                            <span data-en="In-depth, bias-free analysis" data-ko="심층적이고 편견 없는 분석">심층적이고 편견 없는 분석</span>
+                            <span data-en="Objective and Unbiased Evaluation" data-ko="심층적이고 편견 없는 분석">심층적이고 편견 없는 분석</span>
                         </li>
                         <li>
                             <strong data-en="Outcome" data-ko="결과">결과</strong>
-                            <span data-en="Clear recommendations & estimates" data-ko="명확한 권장 사항 및 추정치">명확한 권장 사항 및 추정치</span>
+                            <span data-en="Clear Recommendations and Design Guidance" data-ko="명확한 권장 사항 및 추정치">명확한 권장 사항 및 추정치</span>
                         </li>
                     </ul>
                 </div>

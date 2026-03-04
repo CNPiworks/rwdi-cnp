@@ -9,62 +9,6 @@
     <link rel="stylesheet" href="../css/service-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* 헤더 글자 밀림 방지 */
-        .hero-section h1 {
-            word-break: keep-all;
-            word-wrap: break-word;
-        }
-
-        /* 포트폴리오/연관 서비스 섹션 스타일 */
-        .portfolio-groups {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            text-align: left;
-        }
-        .portfolio-group {
-            flex: 1;
-            min-width: 300px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .portfolio-group h3 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .portfolio-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .portfolio-group li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #555;
-            font-weight: 500;
-        }
-        .portfolio-group li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-        
-        .single-list-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px 40px;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -101,40 +45,40 @@
     <header class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <span class="eyebrow" data-en="Urban Design & Comfort" data-ko="도시 설계 및 쾌적성">도시 설계 및 쾌적성</span>
-				<h1 data-en="Pedestrian Wind Environment Assessment for Comfortable and Safe Open Spaces" 
+                <span class="eyebrow" data-en="Urban Design and Comfort" data-ko="도시 설계 및 쾌적성">도시 설계 및 쾌적성</span>
+				<h1 data-en="Creating Comfortable and Safe Open Spaces through Pedestrian-Level Wind Environment Assessment" 
     				data-ko="보행자 레벨 풍환경 평가를 통한 쾌적하고 안전한 개방공간 조성">
     				보행자 레벨 풍환경 평가를 통한 쾌적하고 안전한 개방공간 조성
 				</h1>
 				<p class="hero-lead" 
-   					data-en="We create comfortable and safe outdoor environments for people to stay in by comprehensively analyzing environmental factors such as wind, sun, humidity, and temperature in various outdoor spaces including cityscapes, shopping malls, and pedestrian walkways. We can improve the comfort and usability of outdoor spaces through design countermeasures using wind tunnel testing and computational fluid dynamics (CFD), such as providing shade where people need it, directing wind into heat-concentrated areas, and placing windbreaks on high-rise terraces. The effect of creating such environments can be maximized through spatial planning based on accurate meteorological and external environmental data and systematic analysis. We aim to quantitatively evaluate the comfort actually felt by people inside and around the project and implement a physically more suitable environment for pedestrians and users regardless of the project type, such as outdoor spaces, development complexes, stadiums, or communities. This service is performed by comprehensively utilizing the following specialized technologies:" 
+   					data-en="We comprehensively analyze environmental factors—including wind, solar radiation, humidity, and temperature—across various outdoor spaces such as urban streetscapes, shopping centers, and pedestrian walkways to create comfortable and safe environments for occupants. By providing shading where needed, guiding airflow away from areas of heat accumulation, and incorporating wind mitigation elements on elevated terraces, we enhance outdoor comfort and usability through wind tunnel testing and computational fluid dynamics (CFD) analysis. The effectiveness of these environmental strategies is maximized through systematic analysis of meteorological and site-specific data, enabling climate-responsive spatial planning. During project execution, we evaluate the microclimate considering architectural design, landscape elements, and local weather conditions to create environments physically suited to pedestrians and users in residential, commercial, sports, and community developments. This service integrates the following technical capabilities:" 
    					data-ko="도시 경관, 쇼핑몰, 보행자 보행로 등 다양한 외부 공간에서 바람, 태양, 습도, 온도와 같은 환경 요소를 종합적으로 분석하여 사람들이 머물기 편안하고 안전한 외부 환경을 조성합니다. 사람들이 필요로 하는 위치에 그늘을 제공하고, 열이 집중되는 공간으로 바람을 유도하며, 고층 테라스에는 방풍 요소를 배치하는 등 풍동실험과 전산유체해석을 통한 설계적 대응방안을 통해 외부 공간의 쾌적성과 활용성을 향상할 수 있습니다. 이러한 환경 조성의 효과는 정확한 기상, 외부환경 데이터와 체계적인 분석에 기반한 공간계획을 통해 극대화될 수 있습니다. 프로젝트 내부와 주변에서 사람들이 실제로 체감하는 쾌적성을 정량적으로 평가하고, 외부 공간, 개발 단지, 경기장, 커뮤니티 등 프로젝트의 유형과 관계없이 보행자와 이용자에게 물리적으로 더 적합한 환경을 구현하는 것을 목표로 합니다. 이 서비스는 다음과 같은 전문 기술을 종합적으로 활용하여 수행됩니다.">
     				도시 경관, 쇼핑몰, 보행자 보행로 등 다양한 외부 공간에서 바람, 태양, 습도, 온도와 같은 환경 요소를 종합적으로 분석하여 사람들이 머물기 편안하고 안전한 외부 환경을 조성합니다. 사람들이 필요로 하는 위치에 그늘을 제공하고, 열이 집중되는 공간으로 바람을 유도하며, 고층 테라스에는 방풍 요소를 배치하는 등 풍동실험과 전산유체해석을 통한 설계적 대응방안을 통해 외부 공간의 쾌적성과 활용성을 향상할 수 있습니다. 이러한 환경 조성의 효과는 정확한 기상, 외부환경 데이터와 체계적인 분석에 기반한 공간계획을 통해 극대화될 수 있습니다. 프로젝트 내부와 주변에서 사람들이 실제로 체감하는 쾌적성을 정량적으로 평가하고, 외부 공간, 개발 단지, 경기장, 커뮤니티 등 프로젝트의 유형과 관계없이 보행자와 이용자에게 물리적으로 더 적합한 환경을 구현하는 것을 목표로 합니다. 이 서비스는 다음과 같은 전문 기술을 종합적으로 활용하여 수행됩니다.
 				</p>
 				<ul class="hero-lead" style="list-style: none; padding-left: 15px; margin: 15px 0;">
     				<li style="text-indent: -15px; margin-bottom: 8px;" 
-        				data-en="· Technology to predict and reproduce precise weather conditions for specific locations around the world" 
+        				data-en="· High-resolution prediction and simulation of localized meteorological conditions at project-specific sites worldwide" 
         				data-ko="· 전 세계 특정 위치를 대상으로 한 정밀한 기상 조건을 예측 및 재현하는 기술">
         				· 전 세계 특정 위치를 대상으로 한 정밀한 기상 조건을 예측 및 재현하는 기술
     				</li>
     				<li style="text-indent: -15px; margin-bottom: 8px;" 
-        				data-en="· Technology to calibrate standard comfort indices to accurately reflect human sensory experiences of cold, heat, and humidity in various climates and environmental conditions" 
+        				data-en="· Calibration of standard comfort indices to accurately reflect human thermal perception under varying climate conditions" 
         				data-ko="· 다양한 기후와 환경 조건에서 추위, 더위, 습도에 대한 인간의 체감 경험을 정확히 반영하도록 표준 쾌적성 지표를 보정하는 기술">
         				· 다양한 기후와 환경 조건에서 추위, 더위, 습도에 대한 인간의 체감 경험을 정확히 반영하도록 표준 쾌적성 지표를 보정하는 기술
     				</li>
     				<li style="text-indent: -15px; margin-bottom: 8px;" 
-        				data-en="· Precise modeling technology of wind flows formed around and between buildings" 
+        				data-en="· Detailed modeling of wind flow around and between buildings" 
         				data-ko="· 건물 주변 및 건물 사이에서 형성되는 바람 흐름의 정밀 모델링 기술">
         				· 건물 주변 및 건물 사이에서 형성되는 바람 흐름의 정밀 모델링 기술
     				</li>
     				<li style="text-indent: -15px; margin-bottom: 8px;" 
-        				data-en="· Technology to accurately predict the location and timing of shadows by time of day" 
+        				data-en="· Time-dependent prediction of shading patterns and solar access" 
         				data-ko="· 그림자가 형성되는 위치와 시점을 시간대별로 정확히 예측하는 기술">
         				· 그림자가 형성되는 위치와 시점을 시간대별로 정확히 예측하는 기술
     				</li>
 				</ul>	
 				<p class="hero-lead" 
-   					data-en="The vast analysis results derived in this way are organized into easy-to-understand visual materials, provided so that points requiring improvement in the design process can be intuitively identified. In addition, we collaborate with related experts such as designers, architects, landscape architects, and owners to provide information to establish actionable plans that can effectively mitigate identified issues. Through such analysis and planning, we systematically manage complex conditions where multiple buildings interact in urban environments, and maximize the environmental improvement effects of outdoor spaces by appropriately applying passive and active techniques such as mist spraying for cooling. Furthermore, we can create attractive outdoor spaces that naturally induce pedestrian use and practically improve the physical environment of outdoor spaces by controlling airflow and shade. Through this, we provide the comfortable spatial experience users expect in public spaces and stably ensure the safety of pedestrians and users." 
+   					data-en="The resulting analysis is presented in clear visual formats that enable intuitive identification of areas requiring design improvement. We collaborate with architects, urban planners, landscape designers, and owners to develop implementable strategies that effectively mitigate identified issues. Through integrated environmental analysis and planning, complex interactions between urban form and climate are systematically addressed, allowing dynamic design strategies to be applied and the overall quality of outdoor spaces to be enhanced. By guiding pedestrian movement naturally and optimizing airflow and shading, we improve the physical environmental conditions of outdoor spaces, delivering the level of comfort expected in public areas while ensuring pedestrian safety and usability." 
    					data-ko="이와 같이 도출된 방대한 분석 결과는 이해하기 쉬운 시각 자료로 정리되어, 설계 과정에서 개선이 필요한 지점을 직관적으로 확인할 수 있도록 제공됩니다. 또한 설계자, 건축가, 조경설계자, 소유주 등 관련 분야 전문가들과 협력하여 식별된 문제를 효과적으로 저감할 수 있는 실행 가능한 계획을 수립하도록 정보를 제공합니다. 이러한 분석과 계획을 통해 도시 환경에서 여러 건물이 상호작용하는 복합적인 조건을 체계적으로 관리하고, 냉각을 위한 미스트 분사와 같은 수동적·능동적 기법을 적절히 적용함으로써 외부 공간의 환경 개선 효과를 극대화할 수 있습니다. 나아가 보행자의 이용을 자연스럽게 유도하는 매력적인 외부 공간을 조성하고, 공기 흐름과 그늘을 조절하여 외부 공간의 물리적 환경을 실질적으로 개선할 수 있습니다. 이를 통해 공공 공간에서 이용자가 기대하는 쾌적한 공간 경험을 제공하고, 보행자와 이용자의 안전을 안정적으로 확보할 수 있습니다.">
     				이와 같이 도출된 방대한 분석 결과는 이해하기 쉬운 시각 자료로 정리되어, 설계 과정에서 개선이 필요한 지점을 직관적으로 확인할 수 있도록 제공됩니다. 또한 설계자, 건축가, 조경설계자, 소유주 등 관련 분야 전문가들과 협력하여 식별된 문제를 효과적으로 저감할 수 있는 실행 가능한 계획을 수립하도록 정보를 제공합니다. 이러한 분석과 계획을 통해 도시 환경에서 여러 건물이 상호작용하는 복합적인 조건을 체계적으로 관리하고, 냉각을 위한 미스트 분사와 같은 수동적·능동적 기법을 적절히 적용함으로써 외부 공간의 환경 개선 효과를 극대화할 수 있습니다. 나아가 보행자의 이용을 자연스럽게 유도하는 매력적인 외부 공간을 조성하고, 공기 흐름과 그늘을 조절하여 외부 공간의 물리적 환경을 실질적으로 개선할 수 있습니다. 이를 통해 공공 공간에서 이용자가 기대하는 쾌적한 공간 경험을 제공하고, 보행자와 이용자의 안전을 안정적으로 확보할 수 있습니다.
 				</p>	

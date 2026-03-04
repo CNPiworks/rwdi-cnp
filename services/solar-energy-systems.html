@@ -9,56 +9,6 @@
     <link rel="stylesheet" href="../css/service-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* 1. 헤더 글자 밀림 방지 (단어 단위 줄바꿈) */
-        .hero-section h1 {
-            word-break: keep-all;
-            word-wrap: break-word;
-        }
-
-        /* 2. 포트폴리오 섹션 계층 구조 스타일 */
-        .portfolio-groups {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            text-align: left;
-        }
-        .portfolio-group {
-            flex: 1;
-            min-width: 300px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .portfolio-group h3 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .portfolio-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .portfolio-group li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #555;
-            font-weight: 500;
-        }
-        .portfolio-group li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -96,8 +46,8 @@
         <div class="container">
             <div class="hero-content">
                 <span class="eyebrow" data-en="Solar Energy Engineering" data-ko="태양광 에너지 엔지니어링">태양광 에너지 엔지니어링</span>
-                <h1 data-en="Wind Effects on Solar Energy Systems" data-ko="태양광 시스템에 미치는 풍하중 효과">태양광 시스템에 미치는 풍하중 효과</h1>
-				<p class="hero-lead" data-en="RWDI helps manufacturers understand and improve how solar arrays behave in wind gusts. We've been testing solar arrays in our wind tunnels for 30 years. We use this extensive experimental data to calculate wind loads that are accurately customized to your design or installation. With this accurate load information, you have more latitude to explore design innovations that will improve performance and save money." data-ko="RWDI는 제조업체가 돌풍 속에서 태양광 어레이가 어떻게 반응하는지 이해하고 개선하도록 돕습니다. 우리는 30년 동안 풍동에서 태양광 어레이를 테스트해 왔습니다. 이 방대한 실험 데이터를 사용하여 귀하의 설계 또는 설치에 정확하게 맞춤화된 풍하중을 계산합니다. 이 정확한 하중 정보를 통해 성능을 개선하고 비용을 절감할 수 있는 설계 혁신을 탐색할 수 있는 더 많은 자유를 얻게 됩니다.">
+                <h1 data-en="Wind Effects on Solar Systems" data-ko="태양광 시스템에 미치는 풍하중 효과">태양광 시스템에 미치는 풍하중 효과</h1>
+				<p class="hero-lead" data-en="RWDI supports manufacturers in understanding and improving how solar arrays respond to wind loading, including extreme wind events. For over 30 years, we have tested solar arrays in wind tunnel facilities. Using extensive experimental data, we calculate wind loads accurately tailored to specific designs and installation conditions. This precise load information enables performance improvements and cost savings, while providing greater flexibility for design innovation." data-ko="RWDI는 제조업체가 돌풍 속에서 태양광 어레이가 어떻게 반응하는지 이해하고 개선하도록 돕습니다. 우리는 30년 동안 풍동에서 태양광 어레이를 테스트해 왔습니다. 이 방대한 실험 데이터를 사용하여 귀하의 설계 또는 설치에 정확하게 맞춤화된 풍하중을 계산합니다. 이 정확한 하중 정보를 통해 성능을 개선하고 비용을 절감할 수 있는 설계 혁신을 탐색할 수 있는 더 많은 자유를 얻게 됩니다.">
 					RWDI는 제조업체가 돌풍 속에서 태양광 어레이가 어떻게 반응하는지 이해하고 개선하도록 돕습니다. 우리는 30년 동안 풍동에서 태양광 어레이를 테스트해 왔습니다. 이 방대한 실험 데이터를 사용하여 귀하의 설계 또는 설치에 정확하게 맞춤화된 풍하중을 계산합니다. 이 정확한 하중 정보를 통해 성능을 개선하고 비용을 절감할 수 있는 설계 혁신을 탐색할 수 있는 더 많은 자유를 얻게 됩니다.
                 </p>
             </div>
@@ -108,24 +58,24 @@
         <div class="container">
             <div class="project-layout">
                 <div class="project-info">
-                    <span class="project-label" data-en="Wind Tunnel Research" data-ko="풍동 연구">풍동 연구</span>
-					<h2 data-en="Calculation of Wind Loads on Solar Panels" 
+                    <span class="project-label" data-en="Wind Engineering" data-ko="풍동 연구">풍동 연구</span>
+					<h2 data-en="Wind Load Determination for Solar Panels" 
     					data-ko="태양광 패널 풍하중 산정">
     					태양광 패널 풍하중 산정
 					</h2>
 					<p class="project-desc" 
-   						data-en="Wind loads acting on solar panels vary significantly depending on the layout method, installation angle, clearance height, spacing between arrays, and the conditions of the surrounding terrain and structures. The simplified wind load values presented in general design standards often fail to sufficiently reflect complex panel geometries and actual array conditions. Therefore, precise wind load calculations considering the actual behavior of individual panels and the entire array are required. Through wind tunnel testing and numerical analysis, localized wind pressure and suction acting on the panel surface can be measured, and the mutual interference effects between arrays can be quantified. Through this, the loads acting on individual panels, support structures, clamps, and fasteners are rationally calculated. In addition, risks of overturning, uplift, and sliding are evaluated by considering the maximum loads occurring at the edges and corners of the panels. These analysis results are directly utilized in the design of anchoring systems, support frames, and tracking systems. Accurate wind load calculation secures structural safety while contributing to the reduction of construction costs by preventing overdesign. Furthermore, by comparing and reviewing various layout alternatives, the most suitable solar panel layout strategy for the site conditions can be derived." 
+   						data-en="Wind loads acting on solar panels vary significantly depending on panel configuration, installation angle, elevation above ground, spacing between arrays, and surrounding terrain and structural conditions. Simplified wind load values presented in general design standards often do not fully capture actual installation conditions. Therefore, detailed wind load evaluation considering the behavior of individual panels and the entire array is required. Through wind tunnel testing and computational analysis, we evaluate local pressure distributions and uplift forces, as well as array interaction effects. Based on these results, we determine rational design loads acting on individual panels, support structures, clamps, and connection details. Maximum loads occurring at panel edges and corners are identified, and risks such as overturning and sliding are assessed. These analytical outcomes directly inform the design of racking systems, support frames, and tracking systems. Accurate wind load determination ensures structural safety while preventing overdesign, contributing to construction cost reduction. In addition, by comparing and evaluating alternative layout configurations, we help identify the most suitable solar panel arrangement strategy for site-specific conditions." 
    						data-ko="태양광 패널에 작용하는 풍하중은 패널의 배치 방식, 설치 각도, 이격 높이, 배열 간 간격, 그리고 주변 지형과 구조물 조건에 따라 크게 달라집니다. 일반적인 설계 기준에서 제시하는 단순화된 풍하중 값은 복잡한 패널 형상과 실제 배열 조건을 충분히 반영하지 못하는 경우가 많습니다. 따라서 패널 단위 및 어레이 전체에 대한 실제 거동을 고려한 정밀한 풍하중 산정이 필요합니다. 풍동실험과 수치해석을 통해 패널 표면에 작용하는 국부 풍압과 흡입력을 계측하고, 배열 간 상호 간섭 효과를 정량화할 수 있습니다. 이를 통해 개별 패널, 지지 구조물, 클램프 및 체결부에 작용하는 하중을 합리적으로 산정합니다. 또한 패널 가장자리와 코너부에서 발생하는 최대 하중을 고려하여 전도, 들림, 미끄러짐 위험을 평가합니다. 이러한 분석 결과는 앵커링 시스템, 지지 프레임, 추적 시스템 설계에 직접 활용됩니다. 정확한 풍하중 산정은 구조 안전성을 확보하는 동시에 과도한 설계를 방지하여 시공 비용을 절감하는 데 기여합니다. 나아가 다양한 배치 대안을 비교·검토함으로써 입지 조건에 가장 적합한 태양광 패널 배치 전략을 도출할 수 있습니다.">
     					태양광 패널에 작용하는 풍하중은 패널의 배치 방식, 설치 각도, 이격 높이, 배열 간 간격, 그리고 주변 지형과 구조물 조건에 따라 크게 달라집니다. 일반적인 설계 기준에서 제시하는 단순화된 풍하중 값은 복잡한 패널 형상과 실제 배열 조건을 충분히 반영하지 못하는 경우가 많습니다. 따라서 패널 단위 및 어레이 전체에 대한 실제 거동을 고려한 정밀한 풍하중 산정이 필요합니다. 풍동실험과 수치해석을 통해 패널 표면에 작용하는 국부 풍압과 흡입력을 계측하고, 배열 간 상호 간섭 효과를 정량화할 수 있습니다. 이를 통해 개별 패널, 지지 구조물, 클램프 및 체결부에 작용하는 하중을 합리적으로 산정합니다. 또한 패널 가장자리와 코너부에서 발생하는 최대 하중을 고려하여 전도, 들림, 미끄러짐 위험을 평가합니다. 이러한 분석 결과는 앵커링 시스템, 지지 프레임, 추적 시스템 설계에 직접 활용됩니다. 정확한 풍하중 산정은 구조 안전성을 확보하는 동시에 과도한 설계를 방지하여 시공 비용을 절감하는 데 기여합니다. 나아가 다양한 배치 대안을 비교·검토함으로써 입지 조건에 가장 적합한 태양광 패널 배치 전략을 도출할 수 있습니다.
 					</p>
                     <ul class="project-stats">
                         <li>
                             <strong data-en="Experience" data-ko="경험">경험</strong>
-                            <span data-en="30 years of wind tunnel testing" data-ko="30년의 풍동 실험 데이터">30년의 풍동 실험 데이터</span>
+                            <span data-en="30 Years of Wind Tunnel Testing Data" data-ko="30년의 풍동 실험 데이터">30년의 풍동 실험 데이터</span>
                         </li>
                         <li>
                             <strong data-en="Outcome" data-ko="결과">결과</strong>
-                            <span data-en="Accurately customized wind loads" data-ko="정확하게 맞춤화된 풍하중">정확하게 맞춤화된 풍하중</span>
+                            <span data-en="Precisely Calibrated Wind Loads" data-ko="정확하게 맞춤화된 풍하중">정확하게 맞춤화된 풍하중</span>
                         </li>
                     </ul>
                 </div>
