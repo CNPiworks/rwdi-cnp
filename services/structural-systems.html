@@ -1,132 +1,187 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wind Effects on Structural Systems - RWDI & CNP Building Performance Engineering">
-    <title>Wind Effects on Structural Systems | RWDI & CNP</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/service-page.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logos">
-                <a href="../index.html">
-                    <img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
-                </a>
-            </div>
-            <div class="nav-menu">
-                <a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
-                <a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
-                    <div class="dropdown-content">
-                        <a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
-                        <a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
-                    </div>
-                </div>                
-                <a href="../index.html#featured" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
-                <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
-                <button class="lang-toggle" id="langToggle">
-                    <span class="lang-option active">KOR</span>
-                    <span class="lang-divider">|</span>
-                    <span class="lang-option">ENG</span>
-                </button>
-            </div>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Wind Effects on Structural Systems - RWDI & CNP Building Performance Engineering">
+    	<title>Wind Effects on Structural Systems | RWDI & CNP</title>
+    	<link rel="stylesheet" href="../css/style.css">
+    	<link rel="stylesheet" href="../css/service-page.css">
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+    	<nav class="navbar" id="navbar">
+        	<div class="nav-container">
+            	<div class="nav-logos">
+                	<a href="../index.html">
+                    	<img src="../images/web_logo.png" alt="RWDI Logo" class="logo logo-rwdi">
+                	</a>
+            	</div>
+            	<div class="nav-menu">
+                	<a href="../index.html#home" class="nav-link" data-en="Home" data-ko="홈">홈</a>
+                	<a href="../index.html#mou" class="nav-link" data-en="MOU" data-ko="MOU">MOU</a>
+                	<div class="nav-dropdown">
+                    	<a href="#" class="nav-link" data-en="Company" data-ko="회사소개">회사소개</a>
+                    	<div class="dropdown-content">
+                        	<a href="../company/rwdi.html" data-en="About RWDI" data-ko="RWDI 소개">RWDI 소개</a>
+                        	<a href="../company/cnp.html" data-en="About CNP" data-ko="CNP 소개">CNP 소개</a>
+                    	</div>
+                	</div>                
+                	<a href="../index.html#featured" class="nav-link" data-en="Services" data-ko="서비스">서비스</a>
+                	<a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
+                	<button class="lang-toggle" id="langToggle">
+                    	<span class="lang-option active">KOR</span>
+                    	<span class="lang-divider">|</span>
+                    	<span class="lang-option">ENG</span>
+                	</button>
+            	</div>
+            	<button class="mobile-menu-toggle" id="mobileMenuToggle">
+                	<i class="fas fa-bars"></i>
+            	</button>
+        	</div>
+    	</nav>
 
-    <header class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <span class="eyebrow" data-en="Structural Engineering" data-ko="구조 엔지니어링">구조 엔지니어링</span>
-				<h1 data-en="Assessment of Wind Effects on Structural Systems and Wind-Resistant Design" 
+    	<header class="hero-section">
+        	<div class="container">
+            	<div class="hero-content">
+                	<span class="eyebrow" 
+                	data-en="Structural Engineering" 
+                	data-ko="구조 엔지니어링">
+                		구조 엔지니어링
+                	</span>
+					<h1 
+					data-en="Assessment of Wind Effects on Structural Systems and Wind-Resistant Design"
     				data-ko="구조시스템에 미치는 바람의 영향 평가 및 내풍설계">
-    				구조시스템에 미치는 바람의 영향 평가 및 내풍설계
-				</h1>
-				<p class="hero-lead" 
-   					data-en="We comprehensively evaluate the effects of wind on structural design through wind tunnel testing and advanced analytical simulations, supporting the realization of safe, optimized, and innovative structural solutions. In addition to determining design wind loads required for structural design, we analyze wind-induced responses affecting serviceability, structural habitability, and operational performance across the overall building lifecycle. We systematically assess the key parameters required for wind-resistant design of target buildings and provide stage-specific design data, enabling structural solutions that meet both safety and serviceability requirements. This approach allows designers to apply rational and innovative concepts based on a clear understanding of wind effects. The service integrates RWDI’s extensive global experience in wind engineering—including wind tunnel testing, numerical analysis, and meteorological data evaluation—with CNP’s accumulated expertise in high-rise and large-span structural design and simulation. During the conceptual design phase, we support rapid decision-making regarding key parameters such as building height and configuration. In the detailed design phase, we provide precise diagnostics and practical, cost-effective solutions. Although wind-related issues are inherently complex, the collaboration between RWDI and CNP enables clear interpretation and structured delivery of results. From initial review to detailed assessment, we provide data in formats suitable for direct application in structural design practice and effective communication among project stakeholders, ensuring reliable wind safety and serviceability performance." 
-   					data-ko="바람이 설계에 미치는 영향을 풍동실험과 해석 시뮬레이션을 통해 종합적으로 평가하여, 안전하고 최적화되며 혁신적인 구조물 구현을 지원합니다. 구조 설계에 필요한 풍하중 산정은 물론, 풍진동, 거주자 쾌적성, 설비 운영 조건 등 건물 성능 전반에 대한 풍영향을 분석합니다. 대상 건물의 내풍설계에 필요한 핵심 정보를 체계적으로 분석하고, 설계 단계별로 요구되는 내풍설계 자료를 제공함으로써 안전성과 사용성을 모두 만족하는 최적의 설계안 도출을 지원합니다. 이를 통해 설계자는 보다 도전적이고 혁신적인 아이디어를 바람의 영향에 대한 명확한 근거를 바탕으로 설계에 적용할 수 있습니다. 본 서비스는 RWDI가 보유한 수십 년간의 풍공학 컨설팅 경험과 세계적 수준의 풍동실험·수치해석·기상 데이터 역량에, 초고층 및 대공간 구조물 분야에서 CNP동양이 축적한 구조 설계 및 해석 시뮬레이션 기술을 결합하여 제공합니다. 설계 초기 단계에서는 건물 높이와 형상에 대한 핵심 의사결정을 신속하게 지원하고, 상세 설계 단계에서는 문제를 정확히 진단하여 창의적이면서도 비용 효율적인 해결방안을 제시합니다. 바람과 관련된 이슈는 복잡할 수 있으나, RWDI와 CNP동양의 협력을 통해 이를 이해하기 쉽게 정리하여 제공합니다. 초기 검토부터 정밀 분석까지, 시각적으로 명확하고 설계 실무에 바로 활용 가능하며 관계자 간 공유가 용이한 형태의 결과물을 제공함으로써 내풍 안전성과 사용성을 효과적으로 확보할 수 있습니다.">
-    					바람이 설계에 미치는 영향을 풍동실험과 해석 시뮬레이션을 통해 종합적으로 평가하여, 안전하고 최적화되며 혁신적인 구조물 구현을 지원합니다. 구조 설계에 필요한 풍하중 산정은 물론, 풍진동, 거주자 쾌적성, 설비 운영 조건 등 건물 성능 전반에 대한 풍영향을 분석합니다. 대상 건물의 내풍설계에 필요한 핵심 정보를 체계적으로 분석하고, 설계 단계별로 요구되는 내풍설계 자료를 제공함으로써 안전성과 사용성을 모두 만족하는 최적의 설계안 도출을 지원합니다. 이를 통해 설계자는 보다 도전적이고 혁신적인 아이디어를 바람의 영향에 대한 명확한 근거를 바탕으로 설계에 적용할 수 있습니다. 본 서비스는 RWDI가 보유한 수십 년간의 풍공학 컨설팅 경험과 세계적 수준의 풍동실험·수치해석·기상 데이터 역량에, 초고층 및 대공간 구조물 분야에서 CNP동양이 축적한 구조 설계 및 해석 시뮬레이션 기술을 결합하여 제공합니다. 설계 초기 단계에서는 건물 높이와 형상에 대한 핵심 의사결정을 신속하게 지원하고, 상세 설계 단계에서는 문제를 정확히 진단하여 창의적이면서도 비용 효율적인 해결방안을 제시합니다. 바람과 관련된 이슈는 복잡할 수 있으나, RWDI와 CNP동양의 협력을 통해 이를 이해하기 쉽게 정리하여 제공합니다. 초기 검토부터 정밀 분석까지, 시각적으로 명확하고 설계 실무에 바로 활용 가능하며 관계자 간 공유가 용이한 형태의 결과물을 제공함으로써 내풍 안전성과 사용성을 효과적으로 확보할 수 있습니다.
-				</p>                
-            </div>
-        </div>
-    </header>
+    					구조시스템에 미치는 바람의 영향 평가 및 내풍설계
+					</h1>
+					<p class="hero-lead" 
+   					data-en="We assess wind effects on structural design using wind tunnel testing and advanced simulations to deliver safe, efficient, and innovative solutions. Our work covers design wind loads and wind-induced responses affecting serviceability, comfort, and performance throughout a building’s lifecycle. We evaluate key parameters for wind-resistant design and provide stage-specific data to support both safety and usability. Combining RWDI’s global wind engineering expertise with CNP’s strength in high-rise and long-span design, we enable informed decisions from concept to detailed design. The collaboration ensures clear interpretation, practical solutions, and data that integrates directly into structural design and stakeholder communication." 
+   					data-ko="우리는 안전하고 효율적이며 혁신적인 솔루션을 제공하기 위해 풍동 테스트와 고급 시뮬레이션을 사용하여 구조 설계에 미치는 바람의 영향을 평가합니다. 우리의 작업은 건물의 수명 주기 동안 서비스 가능성, 쾌적성 및 성능에 영향을 미치는 설계 풍하중과 바람에 의한 반응을 다룹니다. 우리는 바람 저항 설계를 위한 주요 매개변수를 평가하고 안전성과 사용성을 모두 지원하기 위한 단계별 데이터를 제공합니다. RWDI의 글로벌 풍력 엔지니어링 전문성과 CNP의 고층 및 장거리 설계 역량을 결합하여 개념부터 세부 설계까지 정보에 입각한 의사 결정을 가능하게 합니다. 이 협업을 통해 명확한 해석, 실용적인 솔루션, 데이터를 구조 설계 및 이해관계자 커뮤니케이션에 직접 통합할 수 있습니다.">
+    					우리는 안전하고 효율적이며 혁신적인 솔루션을 제공하기 위해 풍동 테스트와 고급 시뮬레이션을 사용하여 구조 설계에 미치는 바람의 영향을 평가합니다. 우리의 작업은 건물의 수명 주기 동안 서비스 가능성, 쾌적성 및 성능에 영향을 미치는 설계 풍하중과 바람에 의한 반응을 다룹니다. 우리는 바람 저항 설계를 위한 주요 매개변수를 평가하고 안전성과 사용성을 모두 지원하기 위한 단계별 데이터를 제공합니다. RWDI의 글로벌 풍력 엔지니어링 전문성과 CNP의 고층 및 장거리 설계 역량을 결합하여 개념부터 세부 설계까지 정보에 입각한 의사 결정을 가능하게 합니다. 이 협업을 통해 명확한 해석, 실용적인 솔루션, 데이터를 구조 설계 및 이해관계자 커뮤니케이션에 직접 통합할 수 있습니다.
+					</p>                
+            	</div>
+        	</div>
+    	</header>
     
-    <section class="project-showcase">
-        <div class="container">
-            <div class="project-layout">
-                <div class="project-info">
-                    <span class="project-label" data-en="Featured Project" data-ko="주요 사례 연구">주요 사례 연구</span>
-                    <h2 data-en="Haeundae Landmark Tower" data-ko="해운대 Land Mark Tower">부산 Land Mark Tower</h2>
-					<p class="project-desc" 
+    	<section class="project-showcase">
+        	<div class="container">
+            	<div class="project-layout">
+                	<div class="project-info">
+                    	<span class="project-label" 
+                    	data-en="Featured Project" 
+                    	data-ko="주요 사례 연구">
+                    		주요 사례 연구
+                    	</span>
+                    	<h2 
+                    	data-en="Haeundae Landmark Tower" 
+                    	data-ko="해운대 Land Mark Tower">
+                    		부산 Land Mark Tower
+                    	</h2>
+						<p class="project-desc" 
    						data-en="Wind tunnel testing was conducted during the structural design phase to determine design wind loads for the wind-resistant structural system and to evaluate wind-induced vibration serviceability. RWDI performed the wind tunnel testing to establish design wind loads for the structural system and to assess wind-induced building responses related to occupant comfort. CNP carried out the preliminary structural design required for the wind tunnel study and conducted structural evaluation based on the wind tunnel test results. Through this collaboration, an optimized and reliable wind-resistant design was achieved for the project." 
    						data-ko="구조설계시 풍하중 저항 구조골조용 하중 산정과 풍진동 사용성 평가를 위해 풍력실험을 수행하였습니다. RWDI는 풍력실험을 수행하여 구조골조 설계용 풍하중 및 풍진동 사용성을 평가하였으며, CNP는 풍동실험을 위한 기본설계와 풍동실험 결과를 이용한 구조검토를 수행하였습니다. 협력을 통해 대상 건물에 대한 안전한 최적 내풍설계가 가능했습니다.">
-    					구조설계시 풍하중 저항 구조골조용 하중 산정과 풍진동 사용성 평가를 위해 풍력실험을 수행하였습니다. RWDI는 풍력실험을 수행하여 구조골조 설계용 풍하중 및 풍진동 사용성을 평가하였으며, CNP는 풍동실험을 위한 기본설계와 풍동실험 결과를 이용한 구조검토를 수행하였습니다. 협력을 통해 대상 건물에 대한 안전한 최적 내풍설계가 가능했습니다.
-					</p>
-                </div>
-                <div class="project-visual">
-                    <img src="../images/Haeundae Landmark Tower.png" width="800" height="500" class="responsive-png" alt="Shanghai Tower Wind Analysis">                    
-                </div>
-            </div>
-        </div>
-    </section>    
+    						구조설계시 풍하중 저항 구조골조용 하중 산정과 풍진동 사용성 평가를 위해 풍력실험을 수행하였습니다. RWDI는 풍력실험을 수행하여 구조골조 설계용 풍하중 및 풍진동 사용성을 평가하였으며, CNP는 풍동실험을 위한 기본설계와 풍동실험 결과를 이용한 구조검토를 수행하였습니다. 협력을 통해 대상 건물에 대한 안전한 최적 내풍설계가 가능했습니다.
+						</p>
+                	</div>
+                	<div class="project-visual">
+                    	<img src="../images/Haeundae Landmark Tower.png" width="800" height="500" class="responsive-png" alt="Shanghai Tower Wind Analysis">                    
+                	</div>
+            	</div>
+        	</div>
+    	</section>    
 
-    <section class="portfolio-list">
-        <div class="container">
-            <h2 class="section-title-sm" data-en="Our Portfolio Includes" data-ko="포트폴리오">포트폴리오</h2>
-            <div class="portfolio-groups">
-                <div class="portfolio-group">
-                    <h3 data-en="Dynamically sensitive structures" data-ko="동적 민감 구조물">Dynamically sensitive structures</h3>
+    	<section class="portfolio-list">
+        	<div class="container">
+            	<h2 class="section-title-sm" 
+            	data-en="Our Portfolio Includes" 
+            	data-ko="포트폴리오">
+            		포트폴리오
+            	</h2>
+            	<div class="portfolio-groups">
+                	<div class="portfolio-group">
+                    	<h3 
+                    	data-en="Dynamically sensitive structures" 
+                    	data-ko="동적 민감 구조물">
+                    		Dynamically sensitive structures
+                    	</h3>
 						<ul>
-    						<li data-en="Super-tall / High-rise towers" data-ko="초고층 타워 / 고층건물">초고층 타워 / 고층건물</li>
-    						<li data-en="Large-span roof structures" data-ko="대공간 지붕 구조">대공간 지붕 구조</li>
-    						<li data-en="Spire structures" data-ko="첨탑 구조물">첨탑 구조물</li>
+    						<li 
+    						data-en="Super-tall / High-rise towers" 
+    						data-ko="초고층 타워 / 고층건물">
+    							초고층 타워 / 고층건물
+    						</li>
+    						<li 
+    						data-en="Large-span roof structures" 
+    						data-ko="대공간 지붕 구조">
+    							대공간 지붕 구조
+    						</li>
+    						<li 
+    						data-en="Spire structures" 
+    						data-ko="첨탑 구조물">
+    							첨탑 구조물
+    						</li>
 						</ul>
-                </div>
-                <div class="portfolio-group">
-                    <h3 data-en="Structures in all shapes, sizes and sectors" data-ko="모든 형태와 규모의 구조물 및 분야">Structures in all shapes, sizes and sectors</h3>
+                	</div>
+                	<div class="portfolio-group">
+                    	<h3 
+                    	data-en="Structures in all shapes, sizes and sectors" 
+                    	data-ko="모든 형태와 규모의 구조물 및 분야">
+                    		Structures in all shapes, sizes and sectors
+                    	</h3>
 						<ul>
-    						<li data-en="Airports, Convention centers, Sculptures" data-ko="공항, 컨벤션 센터, 조형물">공항, 컨벤션 센터, 조형물</li>
-    						<li data-en="Solar installations, Stadia" data-ko="태양광 설비, 경기장">태양광 설비, 경기장</li>
+    						<li 
+    						data-en="Airports, Convention centers, Sculptures" 
+    						data-ko="공항, 컨벤션 센터, 조형물">
+    							공항, 컨벤션 센터, 조형물
+    						</li>
+    						<li 
+    						data-en="Solar installations, Stadia" 
+    						data-ko="태양광 설비, 경기장">
+    							태양광 설비, 경기장
+    						</li>
 						</ul>
-                </div>
-            </div>
-        </div>
-    </section>
+                	</div>
+            	</div>
+        	</div>
+    	</section>
 
-    <section class="cta-simple">
-        <div class="container">
-			<h2 class="cta-title" data-en="Ready to Optimize Your Project?" data-ko="프로젝트를 최적화할 준비가 되셨나요?">
-            	프로젝트를 최적화할 준비가 되셨나요?
-            </h2>
-            <p class="cta-text" data-en="Contact us today to discuss how our expertise can help bring your vision to life" data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
-                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
-            </p>	
-            <a href="../Contact/Contact.html" class="btn-underline" data-en="Contact Us" data-ko="문의하기">문의하기 &rarr;</a>
-        </div>
-    </section>
+    	<section class="cta-simple">
+        	<div class="container">
+				<h2 class="cta-title" 
+				data-en="Ready to Optimize Your Project?" 
+				data-ko="프로젝트를 최적화할 준비가 되셨나요?">
+            		프로젝트를 최적화할 준비가 되셨나요?
+            	</h2>
+            	<p class="cta-text" 
+            	data-en="Contact us today to discuss how our expertise can help bring your vision to life" 
+            	data-ko="귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오">
+	                귀하의 비전을 실현하는 데 저희의 전문성이 어떻게 도움이 될 수 있는지 논의하기 위해 오늘 문의하십시오
+            	</p>	
+            	<a href="../Contact/Contact.html" class="btn-underline" 
+            	data-en="Contact Us" 
+            	data-ko="문의하기">
+            		문의하기 &rarr;
+            	</a>
+        	</div>
+    	</section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logos">
+    	<footer class="footer">
+        	<div class="container">
+            	<div class="footer-content">
+                	<div class="footer-logos">
                     </div>
-                <div class="footer-text">
-                    <p data-en="© 2026 RWDI & CNP Partnership. All rights reserved." data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
-                        © 2026 RWDI & CNP 파트너십. All rights reserved.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../js/main.js"></script>
-</body>
+                	<div class="footer-text">
+                    	<p 
+                    	data-en="© 2026 RWDI & CNP Partnership. All rights reserved." 
+                    	data-ko="© 2026 RWDI & CNP 파트너십. All rights reserved.">
+                        	© 2026 RWDI & CNP 파트너십. All rights reserved.
+                    	</p>
+                	</div>
+            	</div>
+        	</div>
+    	</footer>
+    	
+    	<script src="../js/main.js"></script>
+	</body>
 </html>

@@ -422,7 +422,7 @@ html[lang="en"] .hero-title {
     background: linear-gradient(135deg, #00b8a9, #00d9c8);
 }
 
-.featured-card[data-service="weather-risk-mitigation"] .featured-card-icon {
+.featured-card[data-service="stack-effect"] .featured-card-icon {
     background: linear-gradient(135deg, #e63946, #ff6b6b);
 }
 
