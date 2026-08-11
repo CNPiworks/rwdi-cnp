@@ -495,6 +495,7 @@ body {
     font-weight: 400;
 	word-break: keep-all;
     word-wrap: break-word;    
+    white-space: pre-line;
 }
 
 /* 2. Core Values (Gray Box) - 그리드 카드 시스템 */
@@ -660,6 +661,7 @@ body {
 }
 
 .project-desc {
+	white-space: pre-line;
     font-size: 1.1rem;
     color: var(--text-gray);
     margin-bottom: 30px;
@@ -843,6 +845,94 @@ body {
 .cta-simple .btn-underline:hover {
     background: #f0f0f0;
     transform: translateY(-2px);
+}
+/* ============================================
+   국문·영문 텍스트 가독성 및 줄바꿈
+   ============================================ */
+
+/* 한국어는 어절 단위로 줄바꿈 */
+html[lang="ko"] body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-break: strict;
+}
+
+/*
+ * 기존 hero-section 규칙에는 word-break: keep-all이
+ * 직접 지정되어 있으므로 영문에서는 normal로 재정의
+ */
+html[lang="en"] .hero-section h1,
+html[lang="en"] .hero-lead,
+html[lang="en"] .project-info {
+    word-break: normal;
+    overflow-wrap: break-word;
+    line-break: auto;
+}
+
+/* 제목은 각 줄의 길이가 가능한 한 균형 있게 배치 */
+.service-hero-content h1,
+.overview-content h2,
+.benefit-card h3,
+.case-study-text h3,
+.timeline-content h3,
+.technical-card h3,
+.service-cta h2,
+.application-card h4,
+.faq-question,
+.hero-section h1,
+.section-header h2,
+.value-card h3,
+.project-info h2,
+.service-header,
+.service-item strong,
+.portfolio-group h3,
+.section-title-sm,
+.cta-simple .cta-title {
+    text-wrap: balance;
+}
+
+/* 본문은 마지막 줄이 지나치게 짧아지지 않도록 조정 */
+.service-hero-subtitle,
+.overview-content p,
+.image-placeholder p,
+.benefit-card p,
+.case-study-text p,
+.case-study-list li,
+.timeline-content p,
+.technical-card li,
+.service-cta p,
+.application-card p,
+.faq-answer-content,
+.hero-lead,
+.value-card p,
+.project-desc,
+.service-item p,
+.project-stats span,
+.portfolio-group li,
+.single-list-grid li,
+.cta-simple .cta-text,
+.footer-text p {
+    text-wrap: pretty;
+}
+
+/*
+ * 긴 서비스 소개문의 한 줄 길이를 제한하여
+ * 데스크톱에서도 시선 이동이 지나치게 길어지지 않도록 설정
+ */
+.hero-lead {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+/*
+ * HTML의 &#10; 줄바꿈을 표시할 요소에만 사용
+ * 예: <h1 class="manual-line-break" ...>
+ */
+.manual-line-break {
+    white-space: pre-line;
+    text-wrap: wrap;
 }
 
 @media (max-width: 1024px) {
